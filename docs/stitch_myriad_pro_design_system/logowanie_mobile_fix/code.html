@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'surface-gray': '#F5F7F9', 'on-tertiary': '#ffffff', 'background': '#faf8ff', 'tertiary-container': '#873c00', 'inverse-surface': '#2f3036', 'on-tertiary-fixed': '#321200', 'surface-container-low': '#f3f3fb', 'surface-variant': '#e2e2e9', 'outline-variant': '#c3c6d3', 'primary-fixed': '#d9e2ff', 'on-primary-fixed': '#001945', 'status-success': '#4CAF50', 'primary-fixed-dim': '#b0c6ff', 'outline': '#747783', 'surface': '#faf8ff', 'tertiary': '#632a00', 'on-tertiary-fixed-variant': '#763300', 'on-error': '#ffffff', 'on-surface': '#1a1b21', 'surface-container-highest': '#e2e2e9', 'on-tertiary-container': '#ffb48a', 'on-secondary-container': '#005a72', 'surface-dim': '#dad9e1', 'border-light': '#E0E4E8', 'tertiary-fixed': '#ffdbc9', 'error-container': '#ffdad6', 'on-surface-variant': '#434652', 'on-secondary-fixed': '#001f29', 'on-secondary': '#ffffff', 'inverse-on-surface': '#f0f0f8', 'on-background': '#1a1b21', 'secondary-container': '#5fd4fe', 'surface-container-lowest': '#ffffff', 'brand-black': '#000000', 'primary-container': '#214ea2', 'surface-tint': '#315baf', 'secondary': '#006782', 'primary': '#003684', 'on-primary-container': '#aec4ff', 'surface-container-high': '#e8e7ef', 'tertiary-fixed-dim': '#ffb68d', 'secondary-fixed': '#bbeaff', 'error': '#ba1a1a', 'on-primary-fixed-variant': '#0e4296', 'on-error-container': '#93000a', 'on-secondary-fixed-variant': '#004d62', 'inverse-primary': '#b0c6ff', 'on-primary': '#ffffff', 'surface-container': '#eeedf5', 'surface-bright': '#faf8ff', 'secondary-fixed-dim': '#5fd4fe' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'margin-mobile': '16px', 'safe-area-bottom': '34px', 'stack-sm': '8px', 'gutter-mobile': '12px', 'stack-md': '16px', 'stack-lg': '24px' }, fontFamily: { 'label-md': ['Arimo'], 'price-lg': ['Arimo'], 'headline-sm': ['Arimo'], 'display-lg': ['Arimo'], 'body-md': ['Arimo'], 'headline-md': ['Arimo'], 'body-lg': ['Arimo'] }, fontSize: { 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.05em', fontWeight: '600' }], 'price-lg': ['20px', { lineHeight: '24px', fontWeight: '700' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'display-lg': ['24px', { lineHeight: '32px', letterSpacing: '-0.02em', fontWeight: '700' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'headline-md': ['20px', { lineHeight: '28px', fontWeight: '700' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md"><main class="relative w-full h-[100dvh] bg-surface flex flex-col overflow-hidden"><div class="flex flex-col w-full flex-1 bg-surface-container-lowest px-margin-mobile pb-safe-area-bottom pt-stack-lg justify-center">
+<div class="flex-1 flex flex-col items-center justify-center w-full max-w-sm mx-auto space-y-stack-lg">
+<!-- Logo -->
+<div class="w-full flex justify-center mb-stack-md">
+<img alt="Satur Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdIO5vG_OjtKfUqnQAsvMvQwN9rKQfZznkMPp71CnHkn43BMRCxnXDsFRiFmrx-YaB8LHY8HUdv9KykyDrHF2cpT9aPdGbyNLfp4nOYXdMH_8uyi1TLQl26OehtXk4wKxYhThehAY_LM14O8CRdpXqe1MP298jKXSbnw5XICxZcxjDPAnG_N7ZjZ_pZS_PTYn1wvFpSc9fCg_IlNKzpFi_KpECurk0lH1vicNn6vfztJFyHKo25AZ8ckiNC-6Gn5REnOA">
+</div>
+<!-- Heading -->
+<div class="w-full text-center space-y-stack-sm">
+<h1 class="font-headline-md text-headline-md text-on-surface">Zaloguj się</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Wprowadź swoje dane, aby kontynuować</p>
+</div>
+<!-- Form -->
+<form class="w-full space-y-stack-md mt-stack-md" onsubmit="event.preventDefault();">
+<!-- Email Field -->
+<div class="flex flex-col space-y-stack-sm">
+<label class="font-label-md text-label-md text-on-surface" for="email">Email</label>
+<div class="relative w-full h-12 bg-surface-container-lowest rounded shadow-sm border border-border-light overflow-hidden flex items-center px-4 focus-within:border-primary transition-colors duration-200">
+<span class="material-symbols-outlined text-outline-variant mr-3 text-[20px]">mail</span>
+<input class="w-full h-full bg-transparent outline-none font-body-md text-body-md text-on-surface placeholder-on-surface-variant/50" id="email" placeholder="gsdgdf" required="" type="email">
+</div>
+</div>
+<!-- Password Field -->
+<div class="flex flex-col space-y-stack-sm">
+<label class="font-label-md text-label-md text-on-surface" for="password">Hasło</label>
+<div class="relative w-full h-12 bg-surface-container-lowest rounded shadow-sm border border-border-light overflow-hidden flex items-center px-4 focus-within:border-primary transition-colors duration-200">
+<span class="material-symbols-outlined text-outline-variant mr-3 text-[20px]">lock</span>
+<input class="w-full h-full bg-transparent outline-none font-body-md text-body-md text-on-surface placeholder-on-surface-variant/50" id="password" placeholder="Wpisz swoje hasło" required="" type="password">
+<button aria-label="Toggle password visibility" class="ml-3 text-outline-variant hover:text-on-surface focus:outline-none flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility_off</span>
+</button>
+</div>
+</div>
+<!-- Forgot Password Link -->
+<div class="w-full flex justify-end">
+<a class="font-label-md text-label-md text-primary hover:text-surface-tint transition-colors" href="#">Nie pamiętasz hasła?</a>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-12 bg-primary text-on-primary font-label-md text-label-md rounded shadow-md flex items-center justify-center hover:bg-surface-tint active:bg-primary-container transition-colors duration-200 mt-stack-md" type="submit">
+        Zaloguj się
+      </button>
+</form>
+<!-- Divider -->
+<div class="w-full flex items-center justify-center space-x-4 py-stack-sm">
+<div class="h-px w-full bg-border-light"></div>
+<span class="font-label-md text-label-md text-outline-variant uppercase tracking-wider">lub</span>
+<div class="h-px w-full bg-border-light"></div>
+</div>
+<!-- Register Link -->
+<div class="w-full text-center">
+<span class="font-body-md text-body-md text-on-surface-variant">Nie masz konta? </span>
+<a class="font-label-md text-label-md text-primary hover:text-surface-tint transition-colors" href="#">Dołącz do programu</a>
+</div>
+</div>
+</div></main>
+
+
+
+
+</body></html>

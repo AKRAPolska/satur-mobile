@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;font-family:'Arimo',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-container":"#5fd4fe","error-container":"#ffdad6","secondary":"#006782","primary-container":"#214ea2","on-tertiary-fixed-variant":"#763300","error":"#ba1a1a","inverse-on-surface":"#f0f0f8","on-background":"#1a1b21","tertiary-container":"#873c00","brand-black":"#000000","secondary-fixed-dim":"#5fd4fe","on-surface":"#1a1b21","on-primary":"#ffffff","on-tertiary-container":"#ffb48a","on-primary-fixed-variant":"#0e4296","tertiary-fixed":"#ffdbc9","on-error":"#ffffff","primary-fixed-dim":"#b0c6ff","inverse-primary":"#b0c6ff","on-primary-container":"#aec4ff","surface":"#faf8ff","surface-container-low":"#f3f3fb","secondary-fixed":"#bbeaff","surface-container":"#eeedf5","surface-bright":"#faf8ff","background":"#faf8ff","border-light":"#E0E4E8","on-primary-fixed":"#001945","tertiary":"#632a00","on-secondary":"#ffffff","surface-container-highest":"#e2e2e9","on-surface-variant":"#434652","on-secondary-container":"#005a72","surface-container-lowest":"#ffffff","status-success":"#4CAF50","surface-container-high":"#e8e7ef","outline-variant":"#c3c6d3","surface-gray":"#F5F7F9","on-tertiary-fixed":"#321200","primary":"#003684","outline":"#747783","on-tertiary":"#ffffff","surface-dim":"#dad9e1","surface-tint":"#315baf","on-secondary-fixed":"#001f29","on-error-container":"#93000a","on-secondary-fixed-variant":"#004d62","tertiary-fixed-dim":"#ffb68d","inverse-surface":"#2f3036","primary-fixed":"#d9e2ff","surface-variant":"#e2e2e9"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"safe-area-bottom":"34px","stack-sm":"8px","stack-lg":"24px","gutter-mobile":"12px","margin-mobile":"16px","stack-md":"16px"},"fontFamily":{"price-lg":["Arimo"],"headline-sm":["Arimo"],"body-lg":["Arimo"],"headline-md":["Arimo"],"display-lg":["Arimo"],"body-md":["Arimo"],"label-md":["Arimo"]},"fontSize":{"price-lg":["20px",{"lineHeight":"24px","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"700"}],"display-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-gutter-mobile"><button aria-label="Wstecz" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><span class="font-label-md text-label-md tracking-wider uppercase text-primary font-bold hidden sm:inline-block">B2B</span></div><div class="absolute left-1/2 -translate-x-1/2 max-w-[50%] truncate text-center"><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Klienci</h1></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-background min-h-screen"><div class="flex flex-col w-full px-margin-mobile pt-2 pb-32">
+<!-- Search Field -->
+<div class="relative w-full mb-3 shadow-sm rounded-xl bg-surface-container-lowest flex items-center px-3 py-2.5">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none" id="customerSearch" placeholder="Szukaj klienta po nazwisku, firmie…" type="text">
+<button class="hidden text-outline hover:text-on-surface p-0.5" id="clearSearch">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Quick Stats Strip -->
+<div class="bg-surface-container-low rounded-xl px-3.5 py-2.5 mb-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="w-2 h-2 rounded-full bg-status-success shrink-0"></span>
+<p class="font-label-md text-label-md text-on-surface-variant truncate">
+        Łącznie: <span class="font-bold text-on-surface">7 firm</span> · Aktywni (msc): <span class="font-bold text-on-surface">4</span>
+</p>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold shrink-0">B2B Portal</span>
+</div>
+<!-- Customer Cards List -->
+<div class="flex flex-col gap-2.5" id="customersList">
+<!-- Card 1 -->
+<div class="customer-card bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-center justify-between active:scale-[0.99] transition-transform cursor-pointer" data-name="anna wisniewska designstudio" role="button" tabindex="0">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-headline-sm text-headline-sm font-bold shrink-0">
+          AW
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Anna Wiśniewska</span>
+<span class="font-label-md text-label-md text-on-surface-variant truncate">a.wisniewska@designstudio.pl</span>
+<span class="font-label-md text-label-md text-primary font-semibold mt-0.5">12 zamówień</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 text-right">
+<div class="flex flex-col items-end">
+<span class="font-price-lg text-price-lg text-on-surface">18 400 zł</span>
+<span class="font-label-md text-label-md text-status-success flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Aktywny
+          </span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] ml-1">chevron_right</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="customer-card bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-center justify-between active:scale-[0.99] transition-transform cursor-pointer" data-name="piotr zielinski techcorp" role="button" tabindex="0">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-11 h-11 rounded-full bg-surface-container-high text-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center shrink-0">
+          PZ
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Piotr Zieliński</span>
+<span class="font-label-md text-label-md text-on-surface-variant truncate">p.zielinski@techcorp.io</span>
+<span class="font-label-md text-label-md text-primary font-semibold mt-0.5">8 zamówień</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 text-right">
+<div class="flex flex-col items-end">
+<span class="font-price-lg text-price-lg text-on-surface">32 150 zł</span>
+<span class="font-label-md text-label-md text-status-success flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Aktywny
+          </span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] ml-1">chevron_right</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="customer-card bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-center justify-between active:scale-[0.99] transition-transform cursor-pointer" data-name="katarzyna nowak architekci" role="button" tabindex="0">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-11 h-11 rounded-full bg-primary-fixed text-on-primary-fixed font-headline-sm text-headline-sm font-bold flex items-center justify-center shrink-0">
+          KN
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Katarzyna Nowak</span>
+<span class="font-label-md text-label-md text-on-surface-variant truncate">katarzyna@nowakarchitekci.pl</span>
+<span class="font-label-md text-label-md text-primary font-semibold mt-0.5">5 zamówień</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 text-right">
+<div class="flex flex-col items-end">
+<span class="font-price-lg text-price-lg text-on-surface">9 800 zł</span>
+<span class="font-label-md text-label-md text-outline">Przegląda ofertę</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] ml-1">chevron_right</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="customer-card bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-center justify-between active:scale-[0.99] transition-transform cursor-pointer" data-name="michal dabrowski agencyone" role="button" tabindex="0">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-11 h-11 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-headline-sm text-headline-sm font-bold flex items-center justify-center shrink-0">
+          MD
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Michał Dąbrowski</span>
+<span class="font-label-md text-label-md text-on-surface-variant truncate">m.dabrowski@agencyone.pl</span>
+<span class="font-label-md text-label-md text-primary font-semibold mt-0.5">3 zamówienia</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 text-right">
+<div class="flex flex-col items-end">
+<span class="font-price-lg text-price-lg text-on-surface">4 620 zł</span>
+<span class="font-label-md text-label-md text-outline">Ostatnio 2 tyg. temu</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] ml-1">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Search Empty State -->
+<div class="hidden flex-col items-center justify-center py-10 text-center" id="noResultsState">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center text-outline mb-2">
+<span class="material-symbols-outlined text-[28px]">person_search</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Nie znaleziono klienta</p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[240px]">Sprawdź poprawność wpisanych danych lub dodaj nowy profil do listy.</p>
+</div>
+<!-- Empty State Preview Section (Design Requirement Component) -->
+<div class="mt-8 pt-4 flex flex-col items-center justify-center text-center bg-surface-container-low rounded-xl p-5 shadow-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-outline mb-2.5">
+<span class="material-symbols-outlined text-[28px]">person_off</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Brak klientów</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-0.5 max-w-[260px]">
+      Widok podglądu stanu pustego. Gdy baza kontrahentów jest pusta, tutaj pojawi się formularz importu.
+    </span>
+</div>
+<!-- Floating Action Button (FAB) -->
+<div class="fixed bottom-20 right-4 z-40">
+<button aria-label="Dodaj klienta" class="bg-primary text-on-primary font-headline-sm text-headline-sm font-semibold px-5 py-3 rounded-full shadow-xl flex items-center gap-2 active:scale-95 transition-transform" id="addClientBtn">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span class="">Dodaj klienta</span>
+</button>
+</div>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('customerSearch');
+    const clearBtn = document.getElementById('clearSearch');
+    const cards = document.querySelectorAll('.customer-card');
+    const noResults = document.getElementById('noResultsState');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        if (query.length > 0) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+
+        cards.forEach(card => {
+          const matchData = card.getAttribute('data-name') || '';
+          const cardText = card.textContent.toLowerCase();
+          if (matchData.includes(query) || cardText.includes(query)) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+          noResults.classList.add('flex');
+        } else {
+          noResults.classList.add('hidden');
+          noResults.classList.remove('flex');
+        }
+      });
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        searchInput.value = '';
+        clearBtn.classList.add('hidden');
+        cards.forEach(card => card.classList.remove('hidden'));
+        noResults.classList.add('hidden');
+        noResults.classList.remove('flex');
+        searchInput.focus();
+      });
+    }
+  })();
+</script><nav aria-label="Nawigacja dolna" class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest border-t border-border-light px-2 py-1 flex items-center justify-around pb-safe shadow-[0_-1px_8px_rgba(0,0,0,0.04)]"><a class="flex flex-col items-center justify-center py-1.5 px-3 text-outline hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-md text-label-md mt-0.5">Start</span></a><a class="flex flex-col items-center justify-center py-1.5 px-3 text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[24px]">local_offer</span><span class="font-label-md text-label-md mt-0.5">Oferta</span></a><a class="flex flex-col items-center justify-center py-1.5 px-3 text-outline hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-md text-label-md mt-0.5">Ulubione</span></a><a class="flex flex-col items-center justify-center py-1.5 px-3 text-outline hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[24px]">shopping_cart</span><span class="font-label-md text-label-md mt-0.5">Koszyk</span></a></nav></main>
+
+
+
+
+
+
+
+</body></html>

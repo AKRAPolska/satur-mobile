@@ -1,0 +1,28 @@
+# Satur App — Docker tooling ONLY (no database).
+# Backend API: sibling project ../satur on host port 5051.
+#
+# Usage:
+#   make docker-analyze
+#   make docker-build
+#
+# Flutter day-to-day: use host SDK via Makefile (make run-chrome / make run-android).
+
+services:
+  flutter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - .:/app
+      - flutter_pub_cache:/home/flutter/.pub-cache
+    environment:
+      - API_BASE_URL=${API_BASE_URL:-http://host.docker.internal:5051}
+    # Reach API running on host (satur web :5051)
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    # Default no-op; Makefile overrides with `docker compose run ... <cmd>`
+    command: ["flutter", "--version"]
+
+volumes:
+  flutter_pub_cache:

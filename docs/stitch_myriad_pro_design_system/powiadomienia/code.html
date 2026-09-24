@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#873c00", "border-light": "#E0E4E8", "surface": "#faf8ff", "secondary": "#006782", "surface-variant": "#e2e2e9", "inverse-primary": "#b0c6ff", "surface-container-highest": "#e2e2e9", "on-secondary-fixed-variant": "#004d62", "surface-tint": "#315baf", "on-primary": "#ffffff", "error-container": "#ffdad6", "surface-dim": "#dad9e1", "on-secondary-fixed": "#001f29", "secondary-fixed-dim": "#5fd4fe", "surface-container-low": "#f3f3fb", "on-tertiary-container": "#ffb48a", "primary-fixed-dim": "#b0c6ff", "on-secondary": "#ffffff", "tertiary-fixed": "#ffdbc9", "secondary-fixed": "#bbeaff", "surface-container": "#eeedf5", "primary": "#003684", "outline": "#747783", "inverse-surface": "#2f3036", "surface-gray": "#F5F7F9", "on-primary-container": "#aec4ff", "on-primary-fixed-variant": "#0e4296", "background": "#faf8ff", "on-surface-variant": "#434652", "outline-variant": "#c3c6d3", "on-background": "#1a1b21", "on-tertiary-fixed-variant": "#763300", "surface-bright": "#faf8ff", "secondary-container": "#5fd4fe", "on-tertiary": "#ffffff", "inverse-on-surface": "#f0f0f8", "on-surface": "#1a1b21", "surface-container-high": "#e8e7ef", "tertiary-fixed-dim": "#ffb68d", "surface-container-lowest": "#ffffff", "tertiary": "#632a00", "on-tertiary-fixed": "#321200", "on-primary-fixed": "#001945", "primary-container": "#214ea2", "on-secondary-container": "#005a72", "primary-fixed": "#d9e2ff", "error": "#ba1a1a", "on-error-container": "#93000a", "on-error": "#ffffff", "status-success": "#4CAF50", "brand-black": "#000000" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "stack-sm": "8px", "safe-area-bottom": "34px", "stack-lg": "24px", "stack-md": "16px", "margin-mobile": "16px", "gutter-mobile": "12px" }, "fontFamily": { "body-md": ["Arimo"], "body-lg": ["Arimo"], "label-md": ["Arimo"], "headline-md": ["Arimo"], "headline-sm": ["Arimo"], "display-lg": ["Arimo"], "price-lg": ["Arimo"] } } } }</script><style>@layer base { body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: contain; } .pt-safe { padding-top: env(safe-area-inset-top); } .pb-safe { padding-bottom: env(safe-area-inset-bottom); } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; } [data-active="true"] .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-[116px] flex flex-col"><div class="relative h-16 px-margin-mobile flex items-center justify-between"><div class="w-10 h-10"></div><div class="absolute inset-0 flex items-center justify-center pointer-events-none"><img alt="Satur Logo" class="h-8 w-auto object-contain pointer-events-auto mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVvv0K3pvtf6dsd-cGt6hanLEI1PNdbBkdSNSBQ88G2ReMyXv1gTQNeJnJ69-doDOUlu-G4MyTBJzSdDgV2_1iYrQfAvC9nM6kxAOgZ_HdRt2r20fOwhi2_tA04LTpBPTLb2w1DzKaVHvc9U9Tp99mBPWI4DRA-MkkChesGjzmz315ZjAw9KNn-TwQwr5TySy2_1WhA6jeMIXcOnvgKlSDFXY0fwlcyGPLuTbkWbqXfK-NRPB-A9VgAHx9eHdS-ZlU2IQ"></div><div class="flex items-center gap-2 z-10"><button class="w-10 h-10 flex items-center justify-center text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span></button></div></div><div class="px-margin-mobile pb-3"><div class="bg-surface-gray rounded-xl h-12 px-4 flex items-center gap-3"><span class="material-symbols-outlined text-outline text-[20px]">search</span><span class="text-outline font-body-md">Wyszukaj produkt</span></div></div></div></header><main class="relative w-full pt-[116px] pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sticky Sub-Header with Back Action, Title, Badges, and Bulk Read Action -->
+<div class="sticky top-0 z-40 bg-surface/95 backdrop-blur-md px-margin-mobile py-stack-sm flex flex-col gap-3 shadow-sm">
+<div class="flex items-center justify-between">
+<button aria-label="Wstecz" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<div class="flex items-center gap-2">
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Powiadomienia</h1>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-md text-label-md" id="unread-counter">3 nowe</span>
+</div>
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md active:scale-95 transition-all px-2 py-1 rounded-xl" id="mark-all-read-btn">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span class="hidden sm:inline">Odczytaj</span>
+</button>
+</div>
+<!-- Segmented Control Filters -->
+<div class="flex items-center gap-1.5 p-1 bg-surface-container rounded-xl overflow-x-auto no-scrollbar">
+<button class="filter-tab flex-1 min-w-[90px] py-1.5 px-3 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all text-center" data-filter="all">
+        Wszystkie (5)
+      </button>
+<button class="filter-tab flex-1 min-w-[95px] py-1.5 px-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all text-center" data-filter="orders">
+        Zamówienia (2)
+      </button>
+<button class="filter-tab flex-1 min-w-[95px] py-1.5 px-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all text-center" data-filter="promos">
+        Promocje (3)
+      </button>
+</div>
+</div>
+<!-- Notification Feed -->
+<div class="px-margin-mobile py-stack-md flex flex-col gap-5">
+<!-- Section: Dzisiaj -->
+<div class="notification-group flex flex-col gap-2.5" id="group-today">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline">Dzisiaj</span>
+<span class="font-label-md text-label-md text-outline">2 nowe</span>
+</div>
+<!-- Item 1: Order In Transit -->
+<article class="notification-card unread group relative flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-category="orders">
+<div class="absolute left-1.5 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-primary unread-dot"></div>
+<div class="relative w-11 h-11 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-fixed text-[22px]" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0 pr-1">
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Zamówienie w drodze</h2>
+<span class="font-label-md text-label-md text-outline shrink-0">14:20</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Twoje zamówienie <strong class="font-semibold text-primary">#SAT-84920</strong> zostało przekazane kurierowi DPD i zmierza do Ciebie.</p>
+<div class="mt-2.5 flex items-center gap-2">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-semibold bg-secondary-fixed/50 px-2 py-0.5 rounded-lg">
+<span class="material-symbols-outlined text-[14px]">map</span> Śledź paczkę
+            </span>
+</div>
+</div>
+<div class="self-center pl-1 text-outline group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</div>
+</article>
+<!-- Item 2: Promotion -->
+<article class="notification-card unread group relative flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-category="promos">
+<div class="absolute left-1.5 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-primary unread-dot"></div>
+<div class="relative w-11 h-11 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[22px]" style="font-variation-settings: 'FILL' 1;">local_offer</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0 pr-1">
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Zniżka -20% na akcesoria</h2>
+<span class="font-label-md text-label-md text-outline shrink-0">10:15</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Akcesoria Apple taniej z kodem <span class="font-semibold text-tertiary px-1.5 py-0.5 rounded bg-tertiary-fixed/60">START20</span>. Promocja trwa tylko do niedzieli!</p>
+</div>
+<div class="self-center pl-1 text-outline group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</div>
+</article>
+</div>
+<!-- Section: Wcześniejsze -->
+<div class="notification-group flex flex-col gap-2.5" id="group-earlier">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline">Wcześniejsze</span>
+<span class="font-label-md text-label-md text-outline">1 nowe</span>
+</div>
+<!-- Item 3: Wishlist Price Drop -->
+<article class="notification-card unread group relative flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-category="promos">
+<div class="absolute left-1.5 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-primary unread-dot"></div>
+<div class="relative w-11 h-11 rounded-full bg-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-[22px]" style="font-variation-settings: 'FILL' 1;">trending_down</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0 pr-1">
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Obniżka ceny z listy życzeń</h2>
+<span class="font-label-md text-label-md text-outline shrink-0">Wczoraj, 18:40</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Smartfon <span class="font-semibold text-on-surface">Apple iPhone 15 Pro 128GB</span> staniał o <strong class="text-error font-semibold">150 zł</strong>! Sprawdź ofertę, póki towar jest dostępny.</p>
+</div>
+<div class="self-center pl-1 text-outline group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</div>
+</article>
+<!-- Item 4: Delivered Order -->
+<article class="notification-card read group relative flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-container-low shadow-none hover:bg-surface-container-lowest transition-all active:scale-[0.99] cursor-pointer" data-category="orders">
+<div class="relative w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-status-success text-[22px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0 pr-1">
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Przesyłka dostarczona</h2>
+<span class="font-label-md text-label-md text-outline shrink-0">2 dni temu</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Zamówienie <strong class="font-semibold text-on-surface">#SAT-81042</strong> zostało pomyślnie odebrane w Paczkomacie. Dziękujemy za zakupy w Satur!</p>
+</div>
+<div class="self-center pl-1 text-outline-variant group-hover:text-outline transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</div>
+</article>
+<!-- Item 5: Refund Processed -->
+<article class="notification-card read group relative flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-container-low shadow-none hover:bg-surface-container-lowest transition-all active:scale-[0.99] cursor-pointer" data-category="promos">
+<div class="relative w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0 pr-1">
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Zwrot środków zrealizowany</h2>
+<span class="font-label-md text-label-md text-outline shrink-0">3 dni temu</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Zwrot środków za anulowane zamówienie <strong class="font-semibold text-on-surface">#SAT-79910</strong> został zrealizowany na Twoje konto bankowe.</p>
+</div>
+<div class="self-center pl-1 text-outline-variant group-hover:text-outline transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</div>
+</article>
+</div>
+<!-- Empty State for Tab Switching (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-12 px-6 text-center" id="filter-empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-outline mb-3">
+<span class="material-symbols-outlined text-[32px]">notifications_off</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Brak powiadomień</p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">W tej kategorii nie masz obecnie żadnych nowych komunikatów.</p>
+</div>
+<!-- Decorative Customer Care Banner -->
+<div class="mt-2 p-4 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[26px] text-primary">support_agent</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-primary">Centrum Pomocy Satur</span>
+<span class="font-body-md text-body-md text-on-primary-fixed-variant">Potrzebujesz pomocy z przesyłką?</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const markAllBtn = document.getElementById('mark-all-read-btn');
+    const unreadCounter = document.getElementById('unread-counter');
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.notification-card');
+    const emptyState = document.getElementById('filter-empty-state');
+    const groups = document.querySelectorAll('.notification-group');
+
+    // Mark All as Read Action
+    if (markAllBtn) {
+      markAllBtn.addEventListener('click', () => {
+        const unreadCards = document.querySelectorAll('.notification-card.unread');
+        unreadCards.forEach(card => {
+          card.classList.remove('unread');
+          card.classList.add('read', 'bg-surface-container-low');
+          card.classList.remove('bg-surface-container-lowest');
+          const dot = card.querySelector('.unread-dot');
+          if (dot) dot.remove();
+        });
+
+        if (unreadCounter) {
+          unreadCounter.textContent = '0 nowych';
+          unreadCounter.classList.remove('bg-primary', 'text-on-primary');
+          unreadCounter.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
+        }
+      });
+    }
+
+    // Individual click to read
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        if (card.classList.contains('unread')) {
+          card.classList.remove('unread');
+          card.classList.add('read', 'bg-surface-container-low');
+          card.classList.remove('bg-surface-container-lowest');
+          const dot = card.querySelector('.unread-dot');
+          if (dot) dot.remove();
+          
+          const remainingUnread = document.querySelectorAll('.notification-card.unread').length;
+          if (unreadCounter) {
+            unreadCounter.textContent = remainingUnread > 0 ? `${remainingUnread} nowe` : '0 nowych';
+            if (remainingUnread === 0) {
+              unreadCounter.classList.remove('bg-primary', 'text-on-primary');
+              unreadCounter.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
+            }
+          }
+        }
+      });
+    });
+
+    // Category Filter Switch
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => {
+          t.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+          t.classList.add('text-on-surface-variant');
+        });
+
+        tab.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+        tab.classList.remove('text-on-surface-variant');
+
+        const filter = tab.getAttribute('data-filter');
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const cardCategory = card.getAttribute('data-category');
+          if (filter === 'all' || cardCategory === filter) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Hide/Show section titles if children are visible
+        groups.forEach(group => {
+          const groupCards = group.querySelectorAll('.notification-card');
+          let groupHasVisible = false;
+          groupCards.forEach(c => {
+            if (c.style.display !== 'none') groupHasVisible = true;
+          });
+          group.style.display = groupHasVisible ? 'flex' : 'none';
+        });
+
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 bg-white/95 backdrop-blur-md pb-safe border-t border-border-light/50" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-2"><a aria-current="page" class="flex flex-col items-center justify-center w-full h-full transition-colors text-primary" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Start</span></a><a class="flex flex-col items-center justify-center w-full h-full text-on-surface-variant transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Oferta</span></a><a class="flex flex-col items-center justify-center w-full h-full text-on-surface-variant transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Ulubione</span></a><a class="flex flex-col items-center justify-center w-full h-full text-on-surface-variant transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Koszyk</span></a><a class="flex flex-col items-center justify-center w-full h-full text-on-surface-variant transition-colors hover:text-primary" data-path="account" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Konto</span></a></div></nav>
+
+</body></html>

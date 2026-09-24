@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;font-family:'Arimo',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-container":"#5fd4fe","error-container":"#ffdad6","secondary":"#006782","primary-container":"#214ea2","on-tertiary-fixed-variant":"#763300","error":"#ba1a1a","inverse-on-surface":"#f0f0f8","on-background":"#1a1b21","tertiary-container":"#873c00","brand-black":"#000000","secondary-fixed-dim":"#5fd4fe","on-surface":"#1a1b21","on-primary":"#ffffff","on-tertiary-container":"#ffb48a","on-primary-fixed-variant":"#0e4296","tertiary-fixed":"#ffdbc9","on-error":"#ffffff","primary-fixed-dim":"#b0c6ff","inverse-primary":"#b0c6ff","on-primary-container":"#aec4ff","surface":"#faf8ff","surface-container-low":"#f3f3fb","secondary-fixed":"#bbeaff","surface-container":"#eeedf5","surface-bright":"#faf8ff","background":"#faf8ff","border-light":"#E0E4E8","on-primary-fixed":"#001945","tertiary":"#632a00","on-secondary":"#ffffff","surface-container-highest":"#e2e2e9","on-surface-variant":"#434652","on-secondary-container":"#005a72","surface-container-lowest":"#ffffff","status-success":"#4CAF50","surface-container-high":"#e8e7ef","outline-variant":"#c3c6d3","surface-gray":"#F5F7F9","on-tertiary-fixed":"#321200","primary":"#003684","outline":"#747783","on-tertiary":"#ffffff","surface-dim":"#dad9e1","surface-tint":"#315baf","on-secondary-fixed":"#001f29","on-error-container":"#93000a","on-secondary-fixed-variant":"#004d62","tertiary-fixed-dim":"#ffb68d","inverse-surface":"#2f3036","primary-fixed":"#d9e2ff","surface-variant":"#e2e2e9"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"safe-area-bottom":"34px","stack-sm":"8px","stack-lg":"24px","gutter-mobile":"12px","margin-mobile":"16px","stack-md":"16px"},"fontFamily":{"price-lg":["Arimo"],"headline-sm":["Arimo"],"body-lg":["Arimo"],"headline-md":["Arimo"],"display-lg":["Arimo"],"body-md":["Arimo"],"label-md":["Arimo"]},"fontSize":{"price-lg":["20px",{"lineHeight":"24px","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"700"}],"display-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-gutter-mobile"><button aria-label="Wstecz" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button></div><div class="absolute left-1/2 -translate-x-1/2 text-center pointer-events-none"><h1 class="font-headline-sm text-headline-sm text-on-surface font-bold whitespace-nowrap">Historia zamówień firmowych</h1></div><div class="w-11 h-11"></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-background min-h-screen">
+<div class="flex flex-col w-full pb-stack-lg">
+<!-- Summary Banner / Delight Micro-header -->
+<div class="px-margin-mobile pt-stack-sm pb-stack-sm">
+<div class="bg-surface-container-low rounded-xl p-stack-md flex items-center justify-between shadow-sm">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Konto B2B</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Grupa Satur Sp. z o.o.</span>
+<span class="font-body-md text-body-md text-primary font-medium flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">verified</span> NIP: 5213894021
+        </span>
+</div>
+<div class="flex flex-col items-end justify-center bg-surface-container-lowest px-3 py-2 rounded-lg shadow-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Otwarte</span>
+<span class="font-price-lg text-price-lg text-primary font-bold">14 480 zł</span>
+</div>
+</div>
+</div>
+<!-- Horizontal Scrollable Filter Tabs -->
+<div class="w-full overflow-x-auto no-scrollbar px-margin-mobile py-2 flex items-center gap-2">
+<button class="tab-pill active shrink-0 px-4 py-1.5 rounded-full font-label-md text-label-md font-semibold bg-primary text-on-primary shadow-sm transition-all flex items-center gap-1.5" data-filter="all" type="button">
+<span class="">Wszystkie</span>
+<span class="w-4 h-4 rounded-full bg-on-primary/20 text-on-primary text-[10px] flex items-center justify-center font-bold">3</span>
+</button>
+<button class="tab-pill shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface-variant shadow-sm hover:bg-surface-container transition-all flex items-center gap-1.5" data-filter="pending" type="button">
+<span class="">Oczekuje na płatność</span>
+<span class="w-4 h-4 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[10px] flex items-center justify-center font-bold">1</span>
+</button>
+<button class="tab-pill shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface-variant shadow-sm hover:bg-surface-container transition-all flex items-center gap-1.5" data-filter="in_progress" type="button">
+<span class="">W realizacji</span>
+<span class="w-4 h-4 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[10px] flex items-center justify-center font-bold">1</span>
+</button>
+<button class="tab-pill shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface-variant shadow-sm hover:bg-surface-container transition-all" data-filter="completed" type="button">
+<span class="">Zrealizowane</span>
+</button>
+</div>
+<!-- Search & Mini Quick Filter Section -->
+<div class="px-margin-mobile pt-2 pb-3">
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute left-3 text-[20px] text-outline pointer-events-none">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-10 py-2.5 rounded-xl shadow-sm focus:outline-none focus:bg-surface-container-lowest transition-all placeholder:text-outline" id="orderSearchInput" placeholder="Szukaj zamówienia lub klienta…" type="text">
+<button class="absolute right-3 w-6 h-6 flex items-center justify-center text-outline hover:text-on-surface hidden" id="clearSearchBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Orders Stack List -->
+<div class="px-margin-mobile flex flex-col gap-stack-md" id="ordersListContainer">
+<!-- Card 1: Paid -->
+<div class="order-card bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3 transition-transform active:scale-[0.99]" data-search="#b2b-00142 anna wiśniewska opłacone" data-status="completed">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">#B2B-00142</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Faktura VAT: FV/2026/09/104</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 bg-surface-container-low text-status-success font-label-md text-label-md px-2.5 py-1 rounded-full font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+          Opłacone
+        </span>
+</div>
+<div class="bg-surface-container-low/70 rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">person</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Anna Wiśniewska</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant shrink-0 ml-2">2 wrz 2026</span>
+</div>
+<div class="flex items-baseline justify-between pt-0.5">
+<span class="font-label-md text-label-md text-on-surface-variant">Wartość brutto (3 pozycje)</span>
+<span class="font-price-lg text-price-lg text-on-surface font-bold">4 320,00 zł</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="w-full py-2.5 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+          Szczegóły
+        </button>
+<button class="w-full py-2.5 px-3 rounded-lg text-on-primary font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5 shadow-sm bg-primary hover:bg-primary-container" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+          Faktura PDF
+        </button>
+</div>
+</div>
+<!-- Card 2: Awaiting Payment -->
+<div class="order-card bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3 transition-transform active:scale-[0.99]" data-search="#b2b-00140 piotr zieliński techcorp oczekuje na płatność" data-status="pending">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed/40 flex items-center justify-center text-tertiary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight leading-tight">#B2B-00140</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-0.5 truncate">Termin płatności: 5 dni</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-md text-[11px] px-3 py-1 rounded-full font-bold shrink-0 whitespace-nowrap shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+Oczekuje na płatność
+</span>
+</div>
+<div class="bg-surface-container-low/70 rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">business</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Piotr Zieliński (TechCorp)</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant shrink-0 ml-2">29 sie 2026</span>
+</div>
+<div class="flex items-baseline justify-between pt-0.5">
+<span class="font-label-md text-label-md text-on-surface-variant">Wartość brutto (8 pozycji)</span>
+<span class="font-price-lg text-price-lg text-primary font-bold">8 910,00 zł</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="w-full py-2.5 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+          Szczegóły
+        </button>
+<button class="w-full py-2.5 px-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+          Opłać / Faktura
+        </button>
+</div>
+</div>
+<!-- Card 3: In Progress -->
+<div class="order-card bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3 transition-transform active:scale-[0.99]" data-search="#b2b-00138 katarzyna nowak w realizacji" data-status="in_progress">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">#B2B-00138</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Kurier DPD: 0029381920</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md px-2.5 py-1 rounded-full font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          W realizacji
+        </span>
+</div>
+<div class="bg-surface-container-low/70 rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">person</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Katarzyna Nowak</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant shrink-0 ml-2">25 sie 2026</span>
+</div>
+<div class="flex items-baseline justify-between pt-0.5">
+<span class="font-label-md text-label-md text-on-surface-variant">Wartość brutto (1 pozycja)</span>
+<span class="font-price-lg text-price-lg text-on-surface font-bold">1 250,00 zł</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="w-full py-2.5 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+          Szczegóły
+        </button>
+<button class="w-full py-2.5 px-3 rounded-lg text-on-primary font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5 shadow-sm bg-primary hover:bg-primary-container" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+          Faktura PDF
+        </button>
+</div>
+</div>
+</div>
+<!-- Collapsible / Interactive Empty State Container -->
+<div class="hidden px-margin-mobile py-8 flex flex-col items-center justify-center text-center" id="emptyState">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-3 shadow-inner">
+<span class="material-symbols-outlined text-[32px] text-outline">content_paste_off</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Brak zamówień</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[260px] mb-4">
+      Nie znaleziono żadnych pozycji spełniających wybrane kryteria wyszukiwania.
+    </p>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm" id="resetFiltersBtn" type="button">
+      Wyczyść filtry
+    </button>
+</div>
+<!-- Bottom Empty State Toggle Helper for Preview/Testing (Moment of Delight) -->
+<div class="px-margin-mobile mt-stack-md pt-2">
+<div class="bg-surface-container-low rounded-xl p-3 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">analytics</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Podgląd stanu zerowego</span>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors shadow-sm" id="toggleEmptyStateBtn" type="button">
+        Symuluj brak danych
+      </button>
+</div>
+</div>
+</div>
+<nav aria-label="Menu dolne" class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-t border-border-light pb-safe shadow-[0_-1px_8px_rgba(0,0,0,0.04)]">
+<div class="grid grid-cols-4 h-16 px-2">
+<a class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="font-label-md text-[10px]">Start</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">grid_view</span>
+<span class="font-label-md text-[10px]">Oferta</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+<span class="font-label-md text-[10px]">Ulubione</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">shopping_cart</span>
+<span class="font-label-md text-[10px]">Koszyk</span>
+</a>
+</div>
+</nav></main>
+
+
+
+
+
+
+
+
+
+</body></html>

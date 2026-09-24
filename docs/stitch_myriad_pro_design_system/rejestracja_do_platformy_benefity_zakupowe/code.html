@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="pl" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<title>Dołącz do Satur - Benefity Zakupowe</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#214ea2',
+              navyDark: '#1a3e82',
+              primary: '#003684',
+              cyan: '#38bdf8',
+              cyanLight: '#e0f2fe',
+              bgLight: '#eef5fc'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="custom-layout">
+    /* iOS smooth tap highlight and text rendering */
+    body {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-font-smoothing: antialiased;
+      background-color: #eef5fc;
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="min-h-screen flex flex-col justify-between items-center px-4 text-slate-900 font-sans selection:bg-sky-100 selection:text-brand-navy py-4">
+<!-- BEGIN: MainHeader -->
+<header class="w-full max-w-sm flex flex-col items-center py-2" data-purpose="brand-header"><div class="w-36 flex items-center justify-center"><img alt="Satur Logo" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNsJgFJIDLIYdpLfKeGd_V_qyGgW08LGPfeXjG04p9ytb37cfuVifhvjJVEYXqoyLu88TYo8jd-3OqGtRWq7ANestuoA1n4oaA2G2yvlpKwY6JbkvdtVgDqxUs_zbFL8r5O2OBUVOMieszn7IO12el1l4CZOPmTb7nSQ13GY7nXdyAnxoPi7hRh4VuxK3WTiSASe14DOnHg9mbh0fmdn5cyGvOa2c0ll7U8Hb_ecGPYg1WC9qeeKfN6O1T7UqO1krLPnA"></div></header>
+<!-- END: MainHeader -->
+<!-- BEGIN: RegistrationCardSection -->
+<main class="w-full max-w-md my-auto" data-purpose="registration-card-wrapper"><div class="bg-white rounded-3xl p-5 sm:p-6 shadow-xl shadow-blue-900/5 border border-white/80 transition-all">
+<!-- Kategoria / Badge -->
+<div class="flex items-center mb-3">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-semibold bg-sky-100 text-brand-navy border border-sky-200/60 uppercase tracking-wide">
+          Benefity Zakupowe
+        </span>
+</div>
+<!-- Tytuł i hasło główne -->
+<div class="space-y-1 mb-2.5">
+<h1 class="text-xl sm:text-2xl font-extrabold text-slate-900 leading-tight tracking-tight">
+          Dołącz do <span class="text-sky-600">Satur</span>.
+        </h1>
+<p class="text-base sm:text-lg font-bold text-slate-800 leading-snug tracking-tight">
+          Platforma benefitów zakupowych.
+        </p>
+</div>
+<!-- Opis aktualny: platforma już działa -->
+<p class="text-[13px] leading-relaxed text-slate-600 mb-4 font-normal">
+        Wpisz swój firmowy adres e-mail, aby natychmiast aktywować dostęp do podwójnych rabatów i ofert specjalnych dla Twojej firmy.
+      </p>
+<!-- Sekcja wskaźników korzyści (3 kolumny z pionowymi separatorami) -->
+<div class="border-y border-slate-100 py-3 mb-4">
+<div class="grid grid-cols-3 divide-x divide-slate-200 text-center">
+<!-- Korzyść 1 -->
+<div class="px-1.5">
+<div class="text-lg font-extrabold text-brand-navy tracking-tight">0 zł</div>
+<div class="text-[11px] font-medium text-slate-500 mt-0.5 leading-tight">koszt wdrożenia</div>
+</div>
+<!-- Korzyść 2 -->
+<div class="px-1.5">
+<div class="text-lg font-extrabold text-brand-navy tracking-tight">2×</div>
+<div class="text-[11px] font-medium text-slate-500 mt-0.5 leading-tight">podwójny rabat</div>
+</div>
+<!-- Korzyść 3 -->
+<div class="px-1.5">
+<div class="text-lg font-extrabold text-brand-navy tracking-tight">80%</div>
+<div class="text-[11px] font-medium text-slate-500 mt-0.5 leading-tight">max oszczędności</div>
+</div>
+</div>
+</div>
+<!-- Formularz rejestracyjny -->
+<form action="#" class="space-y-2.5" id="register-form" method="POST" onsubmit="event.preventDefault();">
+<div>
+<div class="flex flex-col sm:flex-row gap-2">
+<div class="relative flex-1">
+<input class="w-full h-11 px-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy focus:border-transparent transition-all" id="email-input" name="email" placeholder="twoj@firmowy.email" required="" type="email">
+</div>
+<button class="h-11 px-5 rounded-xl bg-brand-navy hover:bg-brand-navyDark active:scale-[0.98] text-white font-semibold text-sm flex items-center justify-center gap-1.5 shadow-md shadow-blue-900/20 transition-all duration-150 whitespace-nowrap" type="submit">
+<span class="">Zarejestruj się</span>
+<span class="text-base leading-none">→</span>
+</button>
+</div>
+</div>
+<!-- Podpis bezpieczeństwa -->
+<p class="text-center text-[11px] text-slate-500 pt-1 font-medium">
+          Bez spamu. Bezpieczna rejestracja w 1 minutę.
+        </p>
+</form>
+</div></main>
+<!-- END: RegistrationCardSection -->
+<!-- BEGIN: PageFooterNavigation -->
+<footer class="w-full max-w-sm pb-2 text-center py-2" data-purpose="bottom-navigation">
+<div class="flex flex-col gap-2 items-center">
+<a class="text-xs font-semibold text-brand-navy hover:text-brand-navyDark transition-colors inline-flex items-center gap-1 py-1" href="#">
+<span class="">←</span> Wróć do strony głównej
+      </a>
+<p class="text-xs text-slate-500">
+        Masz już konto? 
+        <a class="font-semibold text-brand-navy hover:underline ml-0.5" href="#">
+          Zaloguj się
+        </a>
+</p>
+</div>
+</footer>
+<!-- END: PageFooterNavigation -->
+
+
+</body></html>

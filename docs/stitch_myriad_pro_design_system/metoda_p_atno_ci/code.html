@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="pl" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#434652", "error": "#ba1a1a", "inverse-surface": "#2f3036", "surface-tint": "#315baf", "surface-container": "#eeedf5", "secondary": "#006782", "secondary-fixed": "#bbeaff", "tertiary-container": "#873c00", "surface": "#faf8ff", "on-error-container": "#93000a", "status-success": "#4CAF50", "on-primary-fixed-variant": "#0e4296", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#b0c6ff", "surface-dim": "#dad9e1", "on-tertiary-fixed-variant": "#763300", "background": "#faf8ff", "on-secondary-fixed-variant": "#004d62", "on-secondary-fixed": "#001f29", "on-secondary": "#ffffff", "surface-variant": "#e2e2e9", "primary": "#003684", "outline-variant": "#c3c6d3", "primary-container": "#214ea2", "brand-black": "#000000", "secondary-container": "#5fd4fe", "on-background": "#1a1b21", "inverse-on-surface": "#f0f0f8", "tertiary-fixed": "#ffdbc9", "on-tertiary-container": "#ffb48a", "surface-gray": "#F5F7F9", "outline": "#747783", "primary-fixed": "#d9e2ff", "on-secondary-container": "#005a72", "on-tertiary-fixed": "#321200", "on-primary": "#ffffff", "surface-container-low": "#f3f3fb", "border-light": "#E0E4E8", "inverse-primary": "#b0c6ff", "on-surface": "#1a1b21", "on-primary-container": "#aec4ff", "surface-container-high": "#e8e7ef", "tertiary": "#632a00", "tertiary-fixed-dim": "#ffb68d", "on-primary-fixed": "#001945", "on-error": "#ffffff", "surface-bright": "#faf8ff", "secondary-fixed-dim": "#5fd4fe", "surface-container-highest": "#e2e2e9", "on-tertiary": "#ffffff", "error-container": "#ffdad6" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "16px", "stack-md": "16px", "gutter-mobile": "12px", "stack-lg": "24px", "stack-sm": "8px", "safe-area-bottom": "34px" }, "fontFamily": { "label-md": ["Arimo"], "headline-md": ["Arimo"], "body-lg": ["Arimo"], "body-md": ["Arimo"], "price-lg": ["Arimo"], "display-lg": ["Arimo"], "headline-sm": ["Arimo"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "price-lg": ["20px", { "lineHeight": "24px", "fontWeight": "700" }], "display-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-14 px-margin-mobile flex items-center justify-between relative"><button aria-label="Wróć" class="w-11 h-11 flex items-center justify-center -ml-2 text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="absolute inset-x-0 mx-auto text-center font-headline-sm text-headline-sm text-on-surface truncate pointer-events-none max-w-[220px]">Metoda płatności</h1></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-safe bg-surface"><div class="flex flex-col w-full pb-56">
+<!-- Stepper paska postępu -->
+<div class="bg-surface-container-lowest px-4 py-3.5 border-b border-border-light shadow-sm">
+<div class="flex items-center justify-between max-w-sm mx-auto">
+<!-- Step 1: Adres -->
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-status-success text-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<span class="text-[11px] font-medium text-on-surface mt-1">Adres</span>
+</div>
+<div class="flex-1 h-[2px] bg-status-success mx-1.5 -mt-3.5"></div>
+<!-- Step 2: Dostawa -->
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-status-success text-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<span class="text-[11px] font-medium text-on-surface mt-1">Dostawa</span>
+</div>
+<div class="flex-1 h-[2px] bg-status-success mx-1.5 -mt-3.5"></div>
+<!-- Step 3: Płatność (aktywny) -->
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xs shadow-sm ring-2 ring-primary/20">
+          3
+        </div>
+<span class="text-[11px] font-bold text-primary mt-1">Płatność</span>
+</div>
+<div class="flex-1 h-[2px] bg-surface-container-high mx-1.5 -mt-3.5"></div>
+<!-- Step 4: Podsumowanie -->
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-medium text-xs">
+          4
+        </div>
+<span class="text-[11px] font-medium text-on-surface-variant mt-1">Koniec</span>
+</div>
+</div>
+</div>
+<!-- Główna zawartość wyboru metody płatności -->
+<div class="px-margin-mobile pt-4 space-y-3">
+<div class="flex items-center justify-between pb-1">
+<h2 class="font-headline-sm text-[17px] text-on-surface">Wybierz sposób zapłaty</h2>
+<span class="text-xs text-on-surface-variant">Krok 3 z 4</span>
+</div>
+<!-- Opcja 1: BLIK (zaznaczona) -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-primary transition-all" id="option-blik" onclick="selectOption('blik')">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-[15px] text-on-surface">BLIK</span>
+<span class="bg-[#e61e38] text-white font-bold text-[10px] px-1.5 py-0.5 rounded tracking-wider">BLIK</span>
+<span class="text-[11px] bg-primary/10 text-primary font-semibold px-2 py-0.5 rounded-full">Polecana</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5">Szybka płatność 6-cyfrowym kodem z banku</p>
+</div>
+</div>
+</div>
+<!-- Rozwinięta sekcja BLIK -->
+<div class="mt-4 pt-3.5 border-t border-border-light" id="blik-expanded-area">
+<label class="block text-xs font-semibold text-on-surface mb-1.5" for="blik-input">Wpisz kod BLIK</label>
+<div class="flex items-center gap-2">
+<div class="relative flex-1">
+<input class="w-full h-11 px-3 bg-surface-container-low border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-lg text-center font-headline-md tracking-[0.3em] text-on-surface placeholder:text-outline/40 placeholder:tracking-normal placeholder:text-sm transition-all" id="blik-input" maxlength="6" pattern="[0-9]*" placeholder="000 000" type="tel">
+</div>
+<button class="h-11 px-4 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary-container transition-colors shrink-0 shadow-sm" type="button">
+            Zatwierdź
+          </button>
+</div>
+<div class="flex items-center gap-1.5 mt-2 text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-status-success">timer</span>
+<span class="">Kod BLIK jest ważny przez 2 minuty</span>
+</div>
+</div>
+</div>
+<!-- Opcja 2: Karta płatnicza -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-border-light hover:border-outline-variant transition-all" id="option-card" onclick="selectOption('card')">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5" id="radio-card"></div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-[15px] text-on-surface">Karta płatnicza</span>
+<div class="flex items-center gap-1">
+<span class="px-1.5 py-0.5 bg-blue-900 text-white rounded text-[9px] font-extrabold italic">VISA</span>
+<span class="px-1.5 py-0.5 bg-orange-600 text-white rounded text-[9px] font-bold">MC</span>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5">Zapłać bezpiecznie kartą Visa lub Mastercard</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Opcja 3: Szybki przelew internetowy -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-border-light hover:border-outline-variant transition-all" id="option-transfer" onclick="selectOption('transfer')">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5" id="radio-transfer"></div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-[15px] text-on-surface">Szybki przelew internetowy</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5">Przelewy24 / PayU / Autopay - Twój bank online</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Opcja 4: Płatność przy odbiorze -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-border-light hover:border-outline-variant transition-all" id="option-cod" onclick="selectOption('cod')">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5" id="radio-cod"></div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-[15px] text-on-surface">Płatność przy odbiorze</span>
+<span class="text-[10px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-medium">za pobraniem</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5">Zapłać gotówką lub kartą kurierowi przy doręczeniu</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Opcja 5: Raty 0% / PayPo -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-border-light hover:border-outline-variant transition-all" id="option-deferred" onclick="selectOption('deferred')">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5" id="radio-deferred"></div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-[15px] text-on-surface">Raty 0% / PayPo</span>
+<span class="text-[10px] bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold px-1.5 py-0.5 rounded">0% RRSO</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5">Kup teraz, zapłać za 30 dni lub rozłóż na raty</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Plakietka bezpieczeństwa -->
+
+</div>
+</div>
+<!-- Przyklejony dolny pasek podsumowania (NAD dolnym menu nawigacyjnym) -->
+<div class="fixed bottom-16 inset-x-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md border-t border-border-light px-margin-mobile py-3 shadow-[0_-4px_16px_rgba(0,0,0,0.06)]">
+<div class="flex items-center justify-between mb-2.5">
+<span class="text-xs text-on-surface-variant font-medium">Łączna kwota 612,50do zapłaty:</span>
+<span class="font-headline-md text-headline-md font-bold text-[#003684]">612,50 zł</span>
+</div>
+<button class="w-full h-12 bg-primary hover:bg-primary-container active:scale-[0.99] text-white font-bold text-sm rounded-xl flex items-center justify-center gap-2 shadow-md transition-all" type="button">
+<span class="">Dalej – Sprawdź zamówienie</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<script>
+  function selectOption(selected) {
+    const options = ['blik', 'card', 'transfer', 'cod', 'deferred'];
+    const blikArea = document.getElementById('blik-expanded-area');
+
+    options.forEach(opt => {
+      const el = document.getElementById('option-' + opt);
+      if (opt === 'blik') {
+        if (selected === 'blik') {
+          el.className = "cursor-pointer bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-primary transition-all";
+          blikArea.classList.remove('hidden');
+          const checkCircle = el.querySelector('.w-6.h-6');
+          checkCircle.className = "w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center shrink-0 mt-0.5";
+          checkCircle.innerHTML = '<span class="material-symbols-outlined text-[16px] font-bold">check</span>';
+        } else {
+          el.className = "cursor-pointer bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-border-light hover:border-outline-variant transition-all";
+          blikArea.classList.add('hidden');
+          const checkCircle = el.querySelector('.w-6.h-6');
+          checkCircle.className = "w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5";
+          checkCircle.innerHTML = '';
+        }
+      } else {
+        const radio = document.getElementById('radio-' + opt);
+        if (selected === opt) {
+          el.className = "cursor-pointer bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-primary transition-all";
+          radio.className = "w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center shrink-0 mt-0.5";
+          radio.innerHTML = '<span class="material-symbols-outlined text-[16px] font-bold">check</span>';
+        } else {
+          el.className = "cursor-pointer bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-border-light hover:border-outline-variant transition-all";
+          radio.className = "w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5";
+          radio.innerHTML = '';
+        }
+      }
+    });
+  }
+</script></main>
+<nav class="fixed bottom-0 inset-x-0 z-50 bg-surface-container-lowest border-t border-border-light h-16 flex items-center justify-around px-2 pb-safe">
+<a class="flex flex-col items-center justify-center flex-1 text-on-surface-variant hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="font-label-md text-[11px] mt-0.5">Start</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 text-on-surface-variant hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-[24px]">grid_view</span>
+<span class="font-label-md text-[11px] mt-0.5">Oferta</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 text-on-surface-variant hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-[24px]">favorite_border</span>
+<span class="font-label-md text-[11px] mt-0.5">Ulubione</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 text-primary font-bold transition-colors py-1 relative" href="#">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+<span class="font-label-md text-[11px] mt-0.5">Koszyk</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 text-on-surface-variant hover:text-primary transition-colors py-1" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-md text-[11px] mt-0.5">Konto</span></a></nav>
+
+
+
+
+
+</body></html>

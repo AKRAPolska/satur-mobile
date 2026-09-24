@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#873c00", "border-light": "#E0E4E8", "surface": "#faf8ff", "secondary": "#006782", "surface-variant": "#e2e2e9", "inverse-primary": "#b0c6ff", "surface-container-highest": "#e2e2e9", "on-secondary-fixed-variant": "#004d62", "surface-tint": "#315baf", "on-primary": "#ffffff", "error-container": "#ffdad6", "surface-dim": "#dad9e1", "on-secondary-fixed": "#001f29", "secondary-fixed-dim": "#5fd4fe", "surface-container-low": "#f3f3fb", "on-tertiary-container": "#ffb48a", "primary-fixed-dim": "#b0c6ff", "on-secondary": "#ffffff", "tertiary-fixed": "#ffdbc9", "secondary-fixed": "#bbeaff", "surface-container": "#eeedf5", "primary": "#003684", "outline": "#747783", "inverse-surface": "#2f3036", "surface-gray": "#F5F7F9", "on-primary-container": "#aec4ff", "on-primary-fixed-variant": "#0e4296", "background": "#faf8ff", "on-surface-variant": "#434652", "outline-variant": "#c3c6d3", "on-background": "#1a1b21", "on-tertiary-fixed-variant": "#763300", "surface-bright": "#faf8ff", "secondary-container": "#5fd4fe", "on-tertiary": "#ffffff", "inverse-on-surface": "#f0f0f8", "on-surface": "#1a1b21", "surface-container-high": "#e8e7ef", "tertiary-fixed-dim": "#ffb68d", "surface-container-lowest": "#ffffff", "tertiary": "#632a00", "on-tertiary-fixed": "#321200", "on-primary-fixed": "#001945", "primary-container": "#214ea2", "on-secondary-container": "#005a72", "primary-fixed": "#d9e2ff", "error": "#ba1a1a", "on-error-container": "#93000a", "on-error": "#ffffff", "status-success": "#4CAF50", "brand-black": "#000000" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "stack-sm": "8px", "safe-area-bottom": "34px", "stack-lg": "24px", "stack-md": "16px", "margin-mobile": "16px", "gutter-mobile": "12px" }, "fontFamily": { "body-md": ["Arimo"], "body-lg": ["Arimo"], "label-md": ["Arimo"], "headline-md": ["Arimo"], "headline-sm": ["Arimo"], "display-lg": ["Arimo"], "price-lg": ["Arimo"] } } } }</script><style>@layer base { body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: contain; } .pt-safe { padding-top: env(safe-area-inset-top); } .pb-safe { padding-bottom: env(safe-area-inset-bottom); } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; } [data-active="true"] .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-[116px] flex flex-col"><div class="h-16 px-margin-mobile flex items-center justify-between relative"><div class="w-10 h-10"></div><div class="absolute inset-0 flex items-center justify-center pointer-events-none"><img alt="Satur" class="h-8 w-auto object-contain pointer-events-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUml_RoG3Ol4mRIedU1rXmyB9NKFSmC0wxwmeMEYI4a7kdZndOGMjtAxGX4sOci_mzewUGzvC8qyvlVP7ePCVCbqfvco6zQm4__QC3chEr3X9i2Pcx9VU9Rdj7Zh_Xld6AmhAEU3oAC8BPdUxRVT_YX2MECziiGNVHNMH8_ASKvBxNxLP0El88aGKXnQFnjSywsAy4hkrqUqam6ohgROPnrECTOEdTl8e7gVAUpeVjuBw5SSe0XOuGjdm_rTs5Q0ObMkE"></div><div class="w-10 h-10 flex items-center justify-center z-10"><button class="w-10 h-10 flex items-center justify-center"><span class="material-symbols-outlined text-on-surface text-[24px]">notifications</span></button></div></div><div class="px-margin-mobile pb-3"><div class="bg-surface-gray rounded-xl h-12 px-4 flex items-center gap-3"><span class="material-symbols-outlined text-outline text-[20px]">search</span><span class="text-outline font-body-md">Wyszukaj produkt</span></div></div></div></header><main class="relative w-full pt-[116px] pb-24 bg-surface min-h-screen px-margin-mobile"><div class="flex flex-col w-full pb-safe">
+<!-- Categories Quick Links (Horizontal Scroll) -->
+<section class="w-full mt-4">
+<div class="flex overflow-x-auto snap-x snap-mandatory px-margin-mobile gap-4 no-scrollbar">
+<a class="flex flex-col items-center gap-2 snap-start min-w-[72px]" href="#">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">computer</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface text-center">Laptopy</span>
+</a>
+<a class="flex flex-col items-center gap-2 snap-start min-w-[72px]" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">smartphone</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface text-center">Telefony</span>
+</a>
+<a class="flex flex-col items-center gap-2 snap-start min-w-[72px]" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">headphones</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface text-center">Audio</span>
+</a>
+<a class="flex flex-col items-center gap-2 snap-start min-w-[72px]" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">cloud_download</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface text-center">Smartwatche</span>
+</a>
+<a class="flex flex-col items-center gap-2 snap-start min-w-[72px]" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">tv</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface text-center">TV &amp; RTV</span>
+</a>
+</div>
+</section>
+<!-- Electronics Carousel -->
+<section class="w-full mt-8">
+<div class="px-margin-mobile flex justify-between items-end mb-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Nowości IT</h2>
+<a class="font-label-md text-label-md text-primary flex items-center" href="#">
+        Zobacz wszystkie <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="flex overflow-x-auto snap-x snap-mandatory px-margin-mobile gap-gutter-mobile pb-4 no-scrollbar"><!-- Product Card 1 -->
+<article class="flex-none w-[180px] snap-start bg-white rounded-xl shadow-sm flex flex-col relative overflow-hidden group">
+<div class="relative pt-[100%] bg-surface-container-low overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-contain p-4 mix-blend-multiply transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNYW9Z1aYNn7MEb0dO9_-OKq4vDziD2YlI1dExJGmrfSdvTIxAK2_X4OGmJgLSEGqfNjFNhnmk32TWuVkGx4S8hjeIRvrYD-VUSRgfaedxLClmYnfKdiVMY06IxYDFS6A6Fg6DjcEhf9loSwqfc8CPIRB-ze6Lnem-hlvBMIdRVgPBl9yYNyPLzpvrCbAhbVbOXBA5z1nDae-dFB7qjeNAASeg8a1bJZkXO-3lta9SCxxbQkVDx0Nubw">
+<span class="absolute top-2 left-2 bg-secondary text-on-secondary font-label-md px-2 py-1 rounded-full">Nowość</span>
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-on-surface hover:text-primary transition-colors z-10 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between relative z-20 bg-white">
+<div>
+<h2 class="font-body-md text-on-surface line-clamp-2 leading-tight mb-2">Laptop Ultrabook Pro 14" M2 16GB/512GB</h2>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="font-label-md text-on-surface-variant">4.9 (124)</span>
+</div>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-price-lg text-primary">5 499 zł</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="flex-none w-[180px] snap-start bg-white rounded-xl shadow-sm flex flex-col relative overflow-hidden group">
+<div class="relative pt-[100%] bg-surface-container-low overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-contain p-4 mix-blend-multiply transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN_Rks7ehTuHfTEsFkehfo6dHNfaSsan5OE_GyOaZjyLRMlBYvvHuSWTiwmXxvq-1Ia2-NXHVkpsEWdhNd0BCz6jT-HVGR6Yd58Q7sFtu2XNxYL-80DhHFnTdlYB8K0m59jSoG0OdBHlZpt7eayJc-Cd9_FyrC4urZwVvpNkeQfoZmZlaRHaquS6LzY3twPtL9bvWn4R0Jg6DSu_yAusVbbAYCED5LhQokHKrrgRxlKzYIp82yrA4Nwg">
+<span class="absolute top-2 left-2 bg-error text-on-error font-label-md px-2 py-1 rounded-full">-15%</span>
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-on-surface hover:text-primary transition-colors z-10 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between relative z-20 bg-white">
+<div>
+<h2 class="font-body-md text-on-surface line-clamp-2 leading-tight mb-2">Smartfon Titanium X 256GB 5G</h2>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="font-label-md text-on-surface-variant">4.8 (89)</span>
+</div>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-price-lg text-primary">4 299 zł</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="flex-none w-[180px] snap-start bg-white rounded-xl shadow-sm flex flex-col relative overflow-hidden group">
+<div class="relative pt-[100%] bg-surface-container-low overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-contain p-4 mix-blend-multiply transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9gF8L2vRvItzdzUlQEu3_Qq1xinE1TvGxzzXJE7VCGX1zCRFqnb6ky3omBJfTWD9Y11tzEKnCdIthQnZ2TLx1IW8jyI1_16kLvH-2UAHLVLSAotjgT2i55VjgV_CozLluuIzEIn3VT_4JIOz7QHntaYdbEFjs6K9x2Y35sKYzxcsVlqvmomOnV8-sY_k4FoJnGZMtw3wXS9FJpAGePjhvy6xDqJXR5WlHEdZWsygLvJfxgHuFBkerkQ">
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-on-surface hover:text-primary transition-colors z-10 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between relative z-20 bg-white">
+<div>
+<h2 class="font-body-md text-on-surface line-clamp-2 leading-tight mb-2">Słuchawki nauszne ANC Pro Black</h2>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="font-label-md text-on-surface-variant">4.9 (124)</span>
+</div>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-price-lg text-primary">1 199 zł</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</article></div>
+</section>
+<!-- 2x2 Grid Recommended -->
+<section class="w-full mt-8 mb-8">
+<div class="px-margin-mobile flex justify-between items-end mb-4"><h2 class="font-headline-md text-headline-md text-on-surface">Polecane dla Ciebie</h2><a class="font-label-md text-label-md text-primary flex items-center" href="#">Zobacz wszystkie <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span></a></div>
+<div class="flex overflow-x-auto snap-x snap-mandatory px-margin-mobile gap-gutter-mobile pb-4 no-scrollbar"><!-- Grid Item 1 -->
+<article class="flex-none w-[180px] snap-start bg-white rounded-xl shadow-sm flex flex-col relative overflow-hidden group">
+<div class="relative pt-[100%] bg-surface-container-low overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-contain p-4 mix-blend-multiply transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtM0qZYpN6lBWCRByUe9nmqj3iv9E6Zp3e40MXuzGx3BcdLg1e3BNU63PTsJuiq1lI7Kg5qQFlCnmZ3LZBrjKcnD0DUBomMzPZHw9ul5e4yoNcAA2h5InNRZWLbdrvtJNk1VM4v378PswSc1bmR5EqTymSs9B1pmeYip0sh5cQ-Y-S86n6COASaaxNKij7F3Jmwrs0-V2bOOarN8oZTnQ-1HazVqruQ3qeCxr_0ENRiKhXDSdqbsgfog">
+
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-on-surface hover:text-primary transition-colors z-10 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between relative z-20 bg-white">
+<div>
+<h2 class="font-body-md text-on-surface line-clamp-2 leading-tight mb-2">Smartwatch Active 2 LTE 44mm</h2>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="font-label-md text-on-surface-variant">4.7 (215)</span>
+</div>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-price-lg text-primary">899 zł</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Grid Item 2 -->
+<article class="flex-none w-[180px] snap-start bg-white rounded-xl shadow-sm flex flex-col relative overflow-hidden group">
+<div class="relative pt-[100%] bg-surface-container-low overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-contain p-4 mix-blend-multiply transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBicKnhrUAi_HVUhEQnndVx4jP34xOb7yPnko8ikK77VjhsoFl5TGWx6zASlg_8zvQndgIlvXW1F0IwaezZ2Y_cCWm3KgzJi106OrQ0PooE-SUvIyGd7PK3LY2k6ceWIcCZaaXHm7t6Sz18s1_C_c49N_7bMppdvKNeX7EwZ3zC-5Z7RiYYGltY6QNAWY0w-hjJqGWJz9QtsIkoyB6a_0juDe-95pG70PloQWX0Ky4stg82Ui39HaUJvg">
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-on-surface hover:text-primary transition-colors z-10 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between relative z-20 bg-white">
+<div>
+<h2 class="font-body-md text-on-surface line-clamp-2 leading-tight mb-2">Klawiatura mechaniczna MX Master</h2>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="font-label-md text-on-surface-variant">4.9 (56)</span>
+</div>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-price-lg text-primary">459 zł</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Grid Item 3 -->
+<article class="flex-none w-[180px] snap-start bg-white rounded-xl shadow-sm flex flex-col relative overflow-hidden group">
+<div class="relative pt-[100%] bg-surface-container-low overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-contain p-4 mix-blend-multiply transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6HK2jvl-2tSp32FbqI4k9-lfUJfbgdsGf60QpHCQuYWVaRJMcsyrvHjaq9x0RJ7vN4NKcCxdlN7iTSq-O9EURvkpAs5s7x5wOxkys3GL36ZQN9VvJMcCly87nmRfvVN8b_45C3ouWn0R9Jv4PDc8fEjXyzE1Jv-5TiBWcWSm9ZZ0K1cJ5dwm_7ePw0mPH7mPTuTs4zxRgEk0SzosRAkSlKlgu7eAFzhotqZLnNBtTBcLDIMs0NML5IA">
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-on-surface hover:text-primary transition-colors z-10 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between relative z-20 bg-white">
+<div>
+<h2 class="font-body-md text-on-surface line-clamp-2 leading-tight mb-2">Aparat cyfrowy Retro Mirrorless 4K</h2>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="font-label-md text-on-surface-variant">4.9 (124)</span>
+</div>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-price-lg text-primary">3 999 zł</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Grid Item 4 -->
+<article class="flex-none w-[180px] snap-start bg-white rounded-xl shadow-sm flex flex-col relative overflow-hidden group">
+<div class="relative pt-[100%] bg-surface-container-low overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-contain p-4 mix-blend-multiply transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAQvbz8eCf9OadUJ9m6Lssshif3TOA83h1Yh1ada4ecGZY1_ec9tNN3SD05K5RbhCBajbWXYZSIIZfGEjBzabuuJ6thj5JwXl0f09nFfGqDZWiWpG4nALe5DnewjGl29iE6ki8QyDmSixGHEvMfm8S2zL4wo5r2nfqZjESTdqALDhM_r0zswQdFLmPrp7og5I12uJ3LXrNPj2IaR2eTeURxGvwvUSxa9KOvTxRzogBIEv6Zn1s8-yB3w">
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-on-surface hover:text-primary transition-colors z-10 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between relative z-20 bg-white">
+<div>
+<h2 class="font-body-md text-on-surface line-clamp-2 leading-tight mb-2">Powerbank 20000mAh PD 65W</h2>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="font-label-md text-on-surface-variant">4.9 (124)</span>
+</div>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-price-lg text-primary">249 zł</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</article></div>
+</section>
+</div></main><nav class="fixed bottom-0 w-full z-50 bg-white/95 backdrop-blur-md pb-safe border-t border-border-light/50" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-2"><a aria-current="page" class="flex flex-col items-center justify-center w-full h-full transition-colors text-primary" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-md text-[11px] leading-tight mt-1">Start</span></a><a class="flex flex-col items-center justify-center w-full h-full text-on-surface-variant transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-md text-[11px] leading-tight mt-1">Oferta</span></a><a class="flex flex-col items-center justify-center w-full h-full text-on-surface-variant transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-md text-[11px] leading-tight mt-1">Ulubione</span></a><a class="flex flex-col items-center justify-center w-full h-full text-on-surface-variant transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="font-label-md text-[11px] leading-tight mt-1">Koszyk</span></a><a class="flex flex-col items-center justify-center w-full h-full text-on-surface-variant transition-colors" data-path="b2b" href="#"><span class="material-symbols-outlined text-[24px]">domain</span><span class="font-label-md text-[11px] leading-tight mt-1">Firma</span></a><a class="flex flex-col items-center justify-center w-full h-full text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-md text-[11px] leading-tight mt-1">Profil</span></a></div></nav>
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

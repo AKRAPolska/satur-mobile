@@ -1,0 +1,208 @@
+<!DOCTYPE html><html lang="pl" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#434652", "error": "#ba1a1a", "inverse-surface": "#2f3036", "surface-tint": "#315baf", "surface-container": "#eeedf5", "secondary": "#006782", "secondary-fixed": "#bbeaff", "tertiary-container": "#873c00", "surface": "#faf8ff", "on-error-container": "#93000a", "status-success": "#4CAF50", "on-primary-fixed-variant": "#0e4296", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#b0c6ff", "surface-dim": "#dad9e1", "on-tertiary-fixed-variant": "#763300", "background": "#faf8ff", "on-secondary-fixed-variant": "#004d62", "on-secondary-fixed": "#001f29", "on-secondary": "#ffffff", "surface-variant": "#e2e2e9", "primary": "#003684", "outline-variant": "#c3c6d3", "primary-container": "#214ea2", "brand-black": "#000000", "secondary-container": "#5fd4fe", "on-background": "#1a1b21", "inverse-on-surface": "#f0f0f8", "tertiary-fixed": "#ffdbc9", "on-tertiary-container": "#ffb48a", "surface-gray": "#F5F7F9", "outline": "#747783", "primary-fixed": "#d9e2ff", "on-secondary-container": "#005a72", "on-tertiary-fixed": "#321200", "on-primary": "#ffffff", "surface-container-low": "#f3f3fb", "border-light": "#E0E4E8", "inverse-primary": "#b0c6ff", "on-surface": "#1a1b21", "on-primary-container": "#aec4ff", "surface-container-high": "#e8e7ef", "tertiary": "#632a00", "tertiary-fixed-dim": "#ffb68d", "on-primary-fixed": "#001945", "on-error": "#ffffff", "surface-bright": "#faf8ff", "secondary-fixed-dim": "#5fd4fe", "surface-container-highest": "#e2e2e9", "on-tertiary": "#ffffff", "error-container": "#ffdad6" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "16px", "stack-md": "16px", "gutter-mobile": "12px", "stack-lg": "24px", "stack-sm": "8px", "safe-area-bottom": "34px" }, "fontFamily": { "label-md": ["Arimo"], "headline-md": ["Arimo"], "body-lg": ["Arimo"], "body-md": ["Arimo"], "price-lg": ["Arimo"], "display-lg": ["Arimo"], "headline-sm": ["Arimo"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "price-lg": ["20px", { "lineHeight": "24px", "fontWeight": "700" }], "display-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+        @keyframes confettiFall {
+          0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(320px) rotate(480deg);
+            opacity: 0;
+          }
+        }
+      </style><style>
+        @keyframes confettiFall {
+          0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(320px) rotate(480deg);
+            opacity: 0;
+          }
+        }
+      </style><style>
+        @keyframes confettiFall {
+          0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(320px) rotate(480deg);
+            opacity: 0;
+          }
+        }
+      </style></head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-14 px-margin-mobile flex items-center justify-between relative"><h1 class="font-headline-sm text-headline-sm text-on-surface truncate text-center" style="width: 100%; text-align: center;">Koszyk</h1></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-20 bg-surface"><div class="flex flex-col w-full relative">
+<!-- Subtle festive confetti container for instant delight -->
+<div class="absolute inset-x-0 top-0 h-96 pointer-events-none overflow-hidden z-20" id="confetti-container"><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(95, 212, 254); left: 40.4126%; top: -20px; transform: rotate(171.003deg); animation: 2.3717s ease-out 0.445968s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(49, 91, 175); left: 80.5406%; top: -20px; transform: rotate(349.16deg); animation: 2.39541s ease-out 0.321632s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(33, 78, 162); left: 77.1304%; top: -20px; transform: rotate(2.4786deg); animation: 2.63045s ease-out 0.746915s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(255, 180, 138); left: 56.7793%; top: -20px; transform: rotate(67.1293deg); animation: 2.34264s ease-out 0.355631s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(95, 212, 254); left: 14.4171%; top: -20px; transform: rotate(117.88deg); animation: 2.59116s ease-out 0.2731s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(95, 212, 254); left: 37.578%; top: -20px; transform: rotate(205.219deg); animation: 1.94669s ease-out 0.463704s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(255, 180, 138); left: 23.0854%; top: -20px; transform: rotate(351.546deg); animation: 2.23464s ease-out 0.605386s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(95, 212, 254); left: 52.5635%; top: -20px; transform: rotate(271.25deg); animation: 1.47238s ease-out 0.460547s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(76, 175, 80); left: 3.82218%; top: -20px; transform: rotate(105.121deg); animation: 1.48431s ease-out 0.764115s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(49, 91, 175); left: 11.2098%; top: -20px; transform: rotate(103.393deg); animation: 2.45956s ease-out 0.414908s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(255, 180, 138); left: 93.5834%; top: -20px; transform: rotate(343.182deg); animation: 1.85112s ease-out 0.775654s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(95, 212, 254); left: 46.2566%; top: -20px; transform: rotate(81.2005deg); animation: 2.61156s ease-out 0.0550824s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(76, 175, 80); left: 48.8333%; top: -20px; transform: rotate(157.385deg); animation: 1.60449s ease-out 0.441452s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(76, 175, 80); left: 5.33025%; top: -20px; transform: rotate(47.592deg); animation: 2.36492s ease-out 0.229307s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(255, 180, 138); left: 81.8709%; top: -20px; transform: rotate(75.8819deg); animation: 1.81714s ease-out 0.419087s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(33, 78, 162); left: 4.37997%; top: -20px; transform: rotate(79.4416deg); animation: 1.51396s ease-out 0.14859s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(49, 91, 175); left: 68.9349%; top: -20px; transform: rotate(189.59deg); animation: 1.67233s ease-out 0.364006s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(95, 212, 254); left: 68.9239%; top: -20px; transform: rotate(80.2434deg); animation: 2.27136s ease-out 0.595757s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(76, 175, 80); left: 78.4421%; top: -20px; transform: rotate(341.539deg); animation: 2.46907s ease-out 0.036171s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(255, 180, 138); left: 31.9056%; top: -20px; transform: rotate(330.754deg); animation: 2.66428s ease-out 0.0834569s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(49, 91, 175); left: 48.5757%; top: -20px; transform: rotate(224.737deg); animation: 1.80225s ease-out 0.124085s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(33, 78, 162); left: 47.4027%; top: -20px; transform: rotate(78.6354deg); animation: 1.72553s ease-out 0.32257s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(33, 78, 162); left: 14.986%; top: -20px; transform: rotate(10.2674deg); animation: 2.44869s ease-out 0.194354s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(33, 78, 162); left: 74.8209%; top: -20px; transform: rotate(137.911deg); animation: 1.39859s ease-out 0.727563s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(49, 91, 175); left: 77.9788%; top: -20px; transform: rotate(287.083deg); animation: 1.31429s ease-out 0.63639s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(76, 175, 80); left: 27.1881%; top: -20px; transform: rotate(21.423deg); animation: 1.64607s ease-out 0.618869s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(95, 212, 254); left: 60.1205%; top: -20px; transform: rotate(189.412deg); animation: 1.44265s ease-out 0.0223867s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(95, 212, 254); left: 60.0604%; top: -20px; transform: rotate(37.1876deg); animation: 2.61182s ease-out 0.140917s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(255, 180, 138); left: 0.0971935%; top: -20px; transform: rotate(167.278deg); animation: 1.59141s ease-out 0.453133s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(95, 212, 254); left: 28.7456%; top: -20px; transform: rotate(62.2945deg); animation: 1.7641s ease-out 0.403185s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(255, 180, 138); left: 59.9397%; top: -20px; transform: rotate(203.677deg); animation: 1.75341s ease-out 0.708702s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(95, 212, 254); left: 36.9126%; top: -20px; transform: rotate(142.757deg); animation: 1.2317s ease-out 0.541062s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(49, 91, 175); left: 57.8756%; top: -20px; transform: rotate(14.8392deg); animation: 1.72382s ease-out 0.273557s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(76, 175, 80); left: 90.9187%; top: -20px; transform: rotate(227.766deg); animation: 1.57662s ease-out 0.646592s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(255, 180, 138); left: 45.326%; top: -20px; transform: rotate(351.736deg); animation: 1.50849s ease-out 0.24953s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(49, 91, 175); left: 35.6119%; top: -20px; transform: rotate(244.565deg); animation: 2.49329s ease-out 0.245263s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(95, 212, 254); left: 18.5332%; top: -20px; transform: rotate(185.582deg); animation: 1.87473s ease-out 0.248888s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(49, 91, 175); left: 68.6724%; top: -20px; transform: rotate(287.147deg); animation: 2.50507s ease-out 0.781389s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(95, 212, 254); left: 16.5416%; top: -20px; transform: rotate(175.86deg); animation: 2.29626s ease-out 0.38536s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(95, 212, 254); left: 56.0168%; top: -20px; transform: rotate(312.942deg); animation: 2.01721s ease-out 0.252173s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(95, 212, 254); left: 47.1759%; top: -20px; transform: rotate(85.039deg); animation: 1.24075s ease-out 0.618233s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(255, 180, 138); left: 98.2574%; top: -20px; transform: rotate(84.7475deg); animation: 2.24161s ease-out 0.174357s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(33, 78, 162); left: 39.8716%; top: -20px; transform: rotate(291.53deg); animation: 2.42465s ease-out 0.128998s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(95, 212, 254); left: 48.4301%; top: -20px; transform: rotate(3.80572deg); animation: 2.39688s ease-out 0.214879s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(95, 212, 254); left: 31.1938%; top: -20px; transform: rotate(355.132deg); animation: 1.91599s ease-out 0.798623s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(76, 175, 80); left: 21.0198%; top: -20px; transform: rotate(354.438deg); animation: 2.31737s ease-out 0.309712s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(76, 175, 80); left: 45.8009%; top: -20px; transform: rotate(343.52deg); animation: 1.91997s ease-out 0.0458544s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(95, 212, 254); left: 23.4169%; top: -20px; transform: rotate(172.885deg); animation: 2.4898s ease-out 0.43618s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(255, 180, 138); left: 76.0219%; top: -20px; transform: rotate(89.045deg); animation: 2.31035s ease-out 0.192794s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(33, 78, 162); left: 64.8221%; top: -20px; transform: rotate(283.853deg); animation: 2.1385s ease-out 0.216835s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(255, 180, 138); left: 45.2139%; top: -20px; transform: rotate(203.473deg); animation: 2.42273s ease-out 0.215321s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(76, 175, 80); left: 59.0974%; top: -20px; transform: rotate(188.22deg); animation: 1.43434s ease-out 0.0719661s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(76, 175, 80); left: 36.0224%; top: -20px; transform: rotate(4.72918deg); animation: 1.21144s ease-out 0.00923204s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(33, 78, 162); left: 58.1932%; top: -20px; transform: rotate(5.95886deg); animation: 2.35224s ease-out 0.741152s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(76, 175, 80); left: 66.6312%; top: -20px; transform: rotate(122.105deg); animation: 1.28727s ease-out 0.398948s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(95, 212, 254); left: 95.477%; top: -20px; transform: rotate(327.755deg); animation: 2.66455s ease-out 0.0887342s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(33, 78, 162); left: 37.2555%; top: -20px; transform: rotate(354.495deg); animation: 2.50412s ease-out 0.219731s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(49, 91, 175); left: 78.9927%; top: -20px; transform: rotate(76.3958deg); animation: 1.21278s ease-out 0.739636s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(33, 78, 162); left: 69.6673%; top: -20px; transform: rotate(119.018deg); animation: 1.54054s ease-out 0.104881s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(33, 78, 162); left: 14.6022%; top: -20px; transform: rotate(120.217deg); animation: 1.66132s ease-out 0.670178s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(49, 91, 175); left: 13.403%; top: -20px; transform: rotate(345.738deg); animation: 1.91875s ease-out 0.510053s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(33, 78, 162); left: 93.0133%; top: -20px; transform: rotate(144.646deg); animation: 2.15149s ease-out 0.112049s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(49, 91, 175); left: 81.6319%; top: -20px; transform: rotate(191.675deg); animation: 2.22232s ease-out 0.785239s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(76, 175, 80); left: 72.8618%; top: -20px; transform: rotate(308.604deg); animation: 1.49101s ease-out 0.628574s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(76, 175, 80); left: 61.8629%; top: -20px; transform: rotate(244.652deg); animation: 1.54403s ease-out 0.130315s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(255, 180, 138); left: 62.3352%; top: -20px; transform: rotate(192.711deg); animation: 2.36453s ease-out 0.725002s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(49, 91, 175); left: 2.46274%; top: -20px; transform: rotate(62.9713deg); animation: 1.5434s ease-out 0.170784s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(33, 78, 162); left: 78.5107%; top: -20px; transform: rotate(319.472deg); animation: 1.39418s ease-out 0.307947s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(49, 91, 175); left: 86.7748%; top: -20px; transform: rotate(73.6312deg); animation: 1.34642s ease-out 0.221018s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(255, 180, 138); left: 55.7621%; top: -20px; transform: rotate(359.383deg); animation: 1.31966s ease-out 0.140301s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(33, 78, 162); left: 98.0455%; top: -20px; transform: rotate(316.349deg); animation: 2.44074s ease-out 0.179384s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(76, 175, 80); left: 86.178%; top: -20px; transform: rotate(107.245deg); animation: 1.75253s ease-out 0.262862s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(255, 180, 138); left: 82.8612%; top: -20px; transform: rotate(344.087deg); animation: 1.73437s ease-out 0.307007s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(255, 180, 138); left: 65.897%; top: -20px; transform: rotate(25.7213deg); animation: 2.01622s ease-out 0.465935s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(76, 175, 80); left: 90.1565%; top: -20px; transform: rotate(295.965deg); animation: 2.68249s ease-out 0.743676s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(33, 78, 162); left: 18.8922%; top: -20px; transform: rotate(168.145deg); animation: 1.24422s ease-out 0.261759s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(95, 212, 254); left: 49.5616%; top: -20px; transform: rotate(140.361deg); animation: 1.65205s ease-out 0.760008s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(255, 180, 138); left: 32.8262%; top: -20px; transform: rotate(150.369deg); animation: 2.47519s ease-out 0.345747s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(49, 91, 175); left: 9.28341%; top: -20px; transform: rotate(55.1329deg); animation: 2.01787s ease-out 0.322215s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(255, 180, 138); left: 79.8857%; top: -20px; transform: rotate(84.6432deg); animation: 2.28114s ease-out 0.32899s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(255, 180, 138); left: 56.3415%; top: -20px; transform: rotate(65.626deg); animation: 2.3359s ease-out 0.25829s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(76, 175, 80); left: 76.2981%; top: -20px; transform: rotate(209.592deg); animation: 1.67223s ease-out 0.35885s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(76, 175, 80); left: 30.839%; top: -20px; transform: rotate(196.625deg); animation: 1.42069s ease-out 0.469501s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 6px; height: 8.4px; background-color: rgb(255, 180, 138); left: 61.7778%; top: -20px; transform: rotate(98.0583deg); animation: 2.23959s ease-out 0.602006s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 8px; height: 11.2px; background-color: rgb(255, 180, 138); left: 52.6908%; top: -20px; transform: rotate(213.443deg); animation: 1.56829s ease-out 0.44767s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(49, 91, 175); left: 23.8759%; top: -20px; transform: rotate(181.959deg); animation: 2.51247s ease-out 0.517329s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 9px; height: 12.6px; background-color: rgb(76, 175, 80); left: 63.7383%; top: -20px; transform: rotate(258.007deg); animation: 1.86768s ease-out 0.226569s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 11px; height: 15.4px; background-color: rgb(95, 212, 254); left: 14.1272%; top: -20px; transform: rotate(32.0998deg); animation: 1.40666s ease-out 0.428297s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 7px; height: 9.8px; background-color: rgb(255, 180, 138); left: 23.3643%; top: -20px; transform: rotate(79.174deg); animation: 2.02705s ease-out 0.150147s 1 normal forwards running confettiFall;"></div><div class="absolute rounded-sm opacity-90" style="width: 10px; height: 14px; background-color: rgb(255, 180, 138); left: 97.3246%; top: -20px; transform: rotate(266.377deg); animation: 1.81461s ease-out 0.278138s 1 normal forwards running confettiFall;"></div></div>
+<!-- Hero Confirmation Card -->
+<section class="px-margin-mobile pt-stack-lg pb-stack-md flex flex-col items-center text-center relative z-10"><span class="font-label-md text-label-md uppercase tracking-wider text-secondary mb-2 block">Sukces transakcji</span><h2 class="font-display-lg text-display-lg text-on-surface mb-2">Dziękujemy za zamówienie!</h2><p class="font-body-md text-body-md text-on-surface-variant max-w-[330px] leading-relaxed">Twoje zamówienie <span class="font-bold text-on-surface">#SAT-20482</span> zostało pomyślnie przyjęte do realizacji. Potwierdzenie oraz fakturę wysłaliśmy na adres <span class="font-bold text-on-surface">jan.kowalski@example.com</span>.</p></section>
+<!-- Key Metrics / Order Details Bento Card -->
+<div class="px-margin-mobile pb-stack-sm">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-stack-md flex flex-col gap-stack-md">
+<!-- Delivery Destination (InPost) -->
+<div class="flex items-start gap-stack-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">
+            local_shipping
+          </span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-0.5">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+              Dostawa
+            </span>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-2 py-0.5 rounded-full">
+              Paczkomat InPost
+            </span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">
+            WAW154M
+          </span>
+<span class="font-body-md text-body-md text-on-surface-variant">
+            ul. Marszałkowska 12, Warszawa
+          </span>
+</div>
+</div>
+<div class="h-[1px] bg-surface-variant w-full"></div>
+<!-- Estimated Arrival Window -->
+<div class="flex items-start gap-stack-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/50 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">
+            schedule
+          </span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-0.5">
+            Przewidywany odbiór
+          </span>
+<span class="font-headline-sm text-headline-sm text-on-surface">
+            Jutro, do godz. 14:00
+          </span>
+<span class="font-body-md text-body-md text-status-success font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">bolt</span> Ekspresowe kompletowanie
+          </span>
+</div>
+</div>
+<div class="h-[1px] bg-surface-variant w-full"></div>
+<!-- Payment Summary Row -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+            Kwota opłacona
+          </span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+<span class="font-body-md text-body-md text-on-surface-variant">BLIK (PKO BP)</span>
+</div>
+</div>
+<span class="font-price-lg text-price-lg text-primary">
+          612,50 zł
+        </span>
+</div>
+</div>
+</div>
+<!-- Real-Time Updates Info Strip -->
+<div class="px-margin-mobile pb-stack-lg">
+<div class="bg-surface-container-low rounded-xl p-stack-md flex items-center gap-stack-sm shadow-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[20px]">
+          sms
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1">
+        Powiadomimy Cię <span class="font-semibold text-on-surface">SMS-em oraz e-mailem</span>, gdy paczka wyląduje bezpiecznie w wybranej skrytce.
+      </p>
+</div>
+</div>
+<!-- Ordered items preview carousel (visual reassurance) -->
+<div class="px-margin-mobile pb-stack-lg">
+<div class="flex items-center justify-between mb-stack-sm">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+        Produkty w przesyłce (2)
+      </span>
+<span class="font-label-md text-label-md text-primary font-semibold">
+        Szczegóły
+      </span>
+</div>
+<div class="grid grid-cols-2 gap-gutter-mobile">
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex flex-col gap-2 shadow-sm">
+<div class="w-full h-24 rounded-lg bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Minimalist design stainless steel thermal water bottle in matte deep blue finish, modern product photography against a pure white studio backdrop, studio lighting, crisp highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbXLwxWRcSP5D1-3-C5r2hTQoqk89DyxMIr6NC-FYolpxp6OCKbE-vJJ47re3K2UarrpkDg7i1ylQkLV3Fh1DG89vJPk5w9nboao8uvGsZ-1CtE0fSta18eaxRcHg78CJYXF18sNKTgs4-nYqQgcsieR3OrEDdJR01fMbwq4vZu6sSQFYr507y5Wua6X29-JsR7F64XjxrFm0mNeczgz_c7X0fKBzstUty7UDFjDK-j5JEvIPlEpLQ4g">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Satur Hydro Pro 750ml</span>
+<span class="font-body-md text-body-md text-on-surface-variant">1 szt. • 249,00 zł</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex flex-col gap-2 shadow-sm">
+<div class="w-full h-24 rounded-lg bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Ergonomic minimalist running shoes in subtle pearl grey and dark navy blue accents, dynamic studio shot, architectural lighting, sharp focus, clean contemporary retail style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUde3ZD79tjf-yb6gYJXkzb84r_veoDfh4M_o0gmVwluR3Mcox2KBwRZP-d1Gjv_c0gGJeHyHQ6fHaYMX7ZqHN-l3UQDJ3iIAK7PE74jw_QYWRvVGN0LkRJAmvCxrJmzYOxGSRH2avWRxb99PxHFK1zclRTpt6PKD2XrlS7eLTEcB2ZC-9Jx6eH1J0jSwKxJ1pMhmxZxIWpiScbRyyw1xBvHXxCs3Hpq8a8iLY3MagMGD0LsEEug8Z4A">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Sneakersy Satur Aero V2</span>
+<span class="font-body-md text-body-md text-on-surface-variant">1 szt. • 363,50 zł</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky-styled Flow Action Buttons -->
+<div class="px-margin-mobile pb-stack-lg flex flex-col gap-stack-sm">
+<button class="w-full h-12 font-headline-sm text-headline-sm rounded-full flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform bg-primary text-on-primary" type="button">
+<span class="">Śledź zamówienie</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="w-full h-12 bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm rounded-full flex items-center justify-center active:bg-surface-container-high transition-colors shadow-sm" type="button">
+      Wróć do sklepu
+    </button>
+</div>
+<!-- Confetti script injection -->
+<script>
+    (function () {
+      const container = document.getElementById('confetti-container');
+      if (!container) return;
+
+      const colors = ['#214ea2', '#5fd4fe', '#4CAF50', '#ffb48a', '#315baf'];
+      const totalPieces = 30;
+
+      for (let i = 0; i < totalPieces; i++) {
+        const piece = document.createElement('div');
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const size = Math.floor(Math.random() * 6) + 6;
+        const left = Math.random() * 100;
+        const delay = Math.random() * 0.8;
+        const duration = Math.random() * 1.5 + 1.2;
+
+        piece.className = 'absolute rounded-sm opacity-90';
+        piece.style.cssText = `
+          width: ${size}px;
+          height: ${size * 1.4}px;
+          background-color: ${color};
+          left: ${left}%;
+          top: -20px;
+          transform: rotate(${Math.random() * 360}deg);
+          animation: confettiFall ${duration}s ease-out ${delay}s forwards;
+        `;
+        container.appendChild(piece);
+      }
+
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes confettiFall {
+          0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(320px) rotate(480deg);
+            opacity: 0;
+          }
+        }
+      `;
+      document.head.appendChild(style);
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="sklep" href="#"><span class="material-symbols-outlined text-[24px]">storefront</span><span class="font-label-md text-label-md">Sklep</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="promocje" href="#"><span class="material-symbols-outlined text-[24px]">local_offer</span><span class="font-label-md text-label-md">Oferta</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="lista-zyczen" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-md text-label-md">Zapisane</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 transition-colors text-primary" data-path="koszyk" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="font-label-md text-label-md">Koszyk</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="konto" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-md text-label-md">Konto</span></a></div></nav>
+
+
+</body></html>
