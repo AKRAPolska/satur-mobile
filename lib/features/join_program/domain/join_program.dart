@@ -1,7 +1,7 @@
-import '../../../core/result/result.dart';
-import 'email_address.dart';
-import 'join_program_failure.dart';
-import 'join_program_repository.dart';
+import 'package:satur_app/features/join_program/domain/package:satur_app/core/result/result.dart';
+import 'package:satur_app/features/join_program/domain/email_address.dart';
+import 'package:satur_app/features/join_program/domain/join_program_failure.dart';
+import 'package:satur_app/features/join_program/domain/join_program_repository.dart';
 
 /// Application use case: validate email and request program access.
 final class JoinProgram {

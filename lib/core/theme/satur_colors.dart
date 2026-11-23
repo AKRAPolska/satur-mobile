@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:satur_app/core/theme/package:flutter/material.dart';
 
 /// Design tokens — satur_e_commerce_mobile/DESIGN.md
 abstract final class SaturColors {

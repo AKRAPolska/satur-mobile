@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:satur_app/app/package:flutter/material.dart';
 
-import '../core/theme/satur_theme.dart';
-import 'di.dart';
-import 'router.dart';
+import 'package:satur_app/app/package:satur_app/core/theme/satur_theme.dart';
+import 'package:satur_app/app/di.dart';
+import 'package:satur_app/app/router.dart';
 
 class SaturApp extends StatelessWidget {
   const SaturApp({super.key, required this.dependencies});

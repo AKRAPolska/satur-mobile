@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:satur_app/core/theme/package:flutter/material.dart';
 
-import 'satur_colors.dart';
-import 'satur_typography.dart';
+import 'package:satur_app/core/theme/satur_colors.dart';
+import 'package:satur_app/core/theme/satur_typography.dart';
 
 abstract final class SaturTheme {
   static ThemeData light() {

@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:satur_app/features/welcome/presentation/package:flutter/material.dart';
+import 'package:satur_app/features/welcome/presentation/package:go_router/go_router.dart';
 
-import '../../../core/widgets/satur_button.dart';
-import '../../../core/widgets/satur_logo.dart';
+import 'package:satur_app/features/welcome/presentation/package:satur_app/core/widgets/satur_button.dart';
+import 'package:satur_app/features/welcome/presentation/package:satur_app/core/widgets/satur_logo.dart';
 
 /// Entry screen — Zaloguj (no-op) / Dołącz → join program.
 class WelcomeScreen extends StatelessWidget {
@@ -50,6 +50,11 @@ class WelcomeScreen extends StatelessWidget {
                 label: 'Dołącz do programu',
                 variant: SaturButtonVariant.outline,
                 onPressed: () => context.go('/join-program'),
+              ),
+              const SizedBox(height: 16),
+              TextButton(
+                onPressed: () => context.go('/products'),
+                child: const Text('Przeglądaj ofertę'),
               ),
               const SizedBox(height: 32),
             ],

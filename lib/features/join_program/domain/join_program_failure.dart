@@ -1,4 +1,4 @@
-import 'package:equatable/equatable.dart';
+import 'package:satur_app/features/join_program/domain/package:equatable/equatable.dart';
 
 /// Domain failures for join-program flow.
 /// [network] / [unknown] reserved for a future HTTP repository.

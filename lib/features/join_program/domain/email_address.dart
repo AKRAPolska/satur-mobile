@@ -1,4 +1,4 @@
-import 'package:equatable/equatable.dart';
+import 'package:satur_app/features/join_program/domain/package:equatable/equatable.dart';
 
 /// Validated email value object.
 final class EmailAddress extends Equatable {

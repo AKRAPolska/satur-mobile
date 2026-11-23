@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
+import 'package:satur_app/features/join_program/presentation/package:flutter/material.dart';
+import 'package:satur_app/features/join_program/presentation/package:flutter_bloc/flutter_bloc.dart';
+import 'package:satur_app/features/join_program/presentation/package:go_router/go_router.dart';
 
-import '../../../core/theme/satur_colors.dart';
-import '../../../core/widgets/satur_button.dart';
-import '../../../core/widgets/satur_logo.dart';
-import '../../../core/widgets/satur_text_field.dart';
-import 'join_program_cubit.dart';
-import 'join_program_state.dart';
+import 'package:satur_app/features/join_program/presentation/package:satur_app/core/theme/satur_colors.dart';
+import 'package:satur_app/features/join_program/presentation/package:satur_app/core/widgets/satur_button.dart';
+import 'package:satur_app/features/join_program/presentation/package:satur_app/core/widgets/satur_logo.dart';
+import 'package:satur_app/features/join_program/presentation/package:satur_app/core/widgets/satur_text_field.dart';
+import 'package:satur_app/features/join_program/presentation/join_program_cubit.dart';
+import 'package:satur_app/features/join_program/presentation/join_program_state.dart';
 
 class JoinProgramScreen extends StatefulWidget {
   const JoinProgramScreen({super.key});

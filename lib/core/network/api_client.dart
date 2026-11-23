@@ -3,8 +3,8 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-import '../result/result.dart';
-import 'api_failure.dart';
+import 'package:satur_app/core/network/package:satur_app/core/result/result.dart';
+import 'package:satur_app/core/network/api_failure.dart';
 
 final class ApiClient {
   ApiClient({
