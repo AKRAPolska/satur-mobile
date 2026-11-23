@@ -5,7 +5,7 @@ import 'package:satur_app/core/theme/satur_theme.dart';
 import 'package:satur_app/features/welcome/presentation/welcome_screen.dart';
 
 void main() {
-  testWidgets('Welcome shows CTAs; Dołącz navigates; Zaloguj stays', (
+  testWidgets('Welcome shows CTAs; Zaloguj and Dołącz navigate', (
     tester,
   ) async {
     final router = GoRouter(
@@ -14,6 +14,12 @@ void main() {
         GoRoute(
           path: '/welcome',
           builder: (_, _) => const WelcomeScreen(),
+        ),
+        GoRoute(
+          path: '/login',
+          builder: (_, _) => const Scaffold(
+            body: Text('login-destination'),
+          ),
         ),
         GoRoute(
           path: '/join-program',
@@ -37,8 +43,10 @@ void main() {
 
     await tester.tap(find.text('Zaloguj się'));
     await tester.pumpAndSettle();
-    expect(find.text('Witaj w Satur'), findsOneWidget);
-    expect(find.text('join-destination'), findsNothing);
+    expect(find.text('login-destination'), findsOneWidget);
+
+    router.go('/welcome');
+    await tester.pumpAndSettle();
 
     await tester.tap(find.text('Dołącz do programu'));
     await tester.pumpAndSettle();

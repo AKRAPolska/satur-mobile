@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 import 'package:satur_app/core/widgets/satur_button.dart';
 import 'package:satur_app/features/catalog/presentation/shared/catalog_bottom_nav.dart';
+import 'package:satur_app/features/catalog/presentation/shared/catalog_nav.dart';
 
 class ProductDetailFooter extends StatelessWidget {
   const ProductDetailFooter({super.key});
@@ -30,11 +30,7 @@ class ProductDetailFooter extends StatelessWidget {
             ),
             CatalogBottomNav(
               active: CatalogTab.oferta,
-              onTap: (tab) {
-                if (tab == CatalogTab.start) {
-                  context.go('/welcome');
-                }
-              },
+              onTap: (tab) => handleCatalogTabNavigation(context, tab),
             ),
           ],
         ),

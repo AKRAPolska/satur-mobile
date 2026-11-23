@@ -1,6 +1,13 @@
+import 'dart:async';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
+import 'package:satur_app/app/di.dart';
+import 'package:satur_app/features/auth/presentation/account/account_screen.dart';
+import 'package:satur_app/features/auth/presentation/login/login_cubit.dart';
+import 'package:satur_app/features/auth/presentation/login/login_screen.dart';
 import 'package:satur_app/features/catalog/presentation/product_detail/product_detail_cubit.dart';
 import 'package:satur_app/features/catalog/presentation/product_detail/product_detail_screen.dart';
 import 'package:satur_app/features/catalog/presentation/product_list/product_list_cubit.dart';
@@ -8,16 +15,35 @@ import 'package:satur_app/features/catalog/presentation/product_list/product_lis
 import 'package:satur_app/features/join_program/presentation/join_program_cubit.dart';
 import 'package:satur_app/features/join_program/presentation/join_program_screen.dart';
 import 'package:satur_app/features/welcome/presentation/welcome_screen.dart';
-import 'package:satur_app/app/di.dart';
 
 GoRouter createRouter(AppDependencies deps) {
   return GoRouter(
     initialLocation: '/welcome',
+    redirect: (context, state) {
+      final onAccount = state.matchedLocation == '/account';
+      final loggedIn = deps.sessionCubit.isAuthenticated;
+      if (onAccount && !loggedIn) return '/login';
+      return null;
+    },
+    refreshListenable: GoRouterRefreshStream(deps.sessionCubit.stream),
     routes: [
       GoRoute(
         path: '/welcome',
         name: 'welcome',
         builder: (context, state) => const WelcomeScreen(),
+      ),
+      GoRoute(
+        path: '/login',
+        name: 'login',
+        builder: (context, state) => BlocProvider(
+          create: (_) => LoginCubit(deps.authRepository, deps.sessionCubit),
+          child: const LoginScreen(),
+        ),
+      ),
+      GoRoute(
+        path: '/account',
+        name: 'account',
+        builder: (context, state) => const AccountScreen(),
       ),
       GoRoute(
         path: '/join-program',
@@ -51,4 +77,19 @@ GoRouter createRouter(AppDependencies deps) {
       ),
     ],
   );
+}
+
+final class GoRouterRefreshStream extends ChangeNotifier {
+  GoRouterRefreshStream(Stream<dynamic> stream) {
+    notifyListeners();
+    _subscription = stream.asBroadcastStream().listen((_) => notifyListeners());
+  }
+
+  late final StreamSubscription<dynamic> _subscription;
+
+  @override
+  void dispose() {
+    _subscription.cancel();
+    super.dispose();
+  }
 }

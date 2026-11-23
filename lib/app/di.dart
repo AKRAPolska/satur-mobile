@@ -2,6 +2,11 @@ import 'package:http/http.dart' as http;
 
 import 'package:satur_app/core/config.dart';
 import 'package:satur_app/core/network/api_client.dart';
+import 'package:satur_app/features/auth/data/http_auth_repository.dart';
+import 'package:satur_app/features/auth/data/secure_session_store.dart';
+import 'package:satur_app/features/auth/domain/auth_repository.dart';
+import 'package:satur_app/features/auth/domain/session_store.dart';
+import 'package:satur_app/features/auth/presentation/session_cubit.dart';
 import 'package:satur_app/features/catalog/data/http_catalog_repository.dart';
 import 'package:satur_app/features/catalog/domain/catalog_repository.dart';
 import 'package:satur_app/features/join_program/data/stub_join_program_repository.dart';
@@ -13,6 +18,9 @@ final class AppDependencies {
   AppDependencies._({
     required this.httpClient,
     required this.apiClient,
+    required this.sessionStore,
+    required this.sessionCubit,
+    required this.authRepository,
     required this.catalogRepository,
     required this.joinProgramRepository,
     required this.joinProgram,
@@ -20,23 +28,31 @@ final class AppDependencies {
 
   final http.Client httpClient;
   final ApiClient apiClient;
+  final SessionStore sessionStore;
+  final SessionCubit sessionCubit;
+  final AuthRepository authRepository;
   final CatalogRepository catalogRepository;
   final JoinProgramRepository joinProgramRepository;
   final JoinProgram joinProgram;
 
   factory AppDependencies.create() {
     final httpClient = http.Client();
+    final sessionStore = SecureSessionStore();
     final apiClient = ApiClient(
       httpClient: httpClient,
       baseUrl: AppConfig.apiBaseUrl,
+      tokenProvider: sessionStore.readToken,
     );
-    final repository = StubJoinProgramRepository();
+    final joinRepo = StubJoinProgramRepository();
     return AppDependencies._(
       httpClient: httpClient,
       apiClient: apiClient,
+      sessionStore: sessionStore,
+      sessionCubit: SessionCubit(sessionStore),
+      authRepository: HttpAuthRepository(apiClient, sessionStore),
       catalogRepository: HttpCatalogRepository(apiClient),
-      joinProgramRepository: repository,
-      joinProgram: JoinProgram(repository),
+      joinProgramRepository: joinRepo,
+      joinProgram: JoinProgram(joinRepo),
     );
   }
 }

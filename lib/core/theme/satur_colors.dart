@@ -10,6 +10,7 @@ abstract final class SaturColors {
   static const background = Color(0xFFFAF8FF);
   static const surface = Color(0xFFFAF8FF);
   static const surfaceContainerLowest = Color(0xFFFFFFFF);
+  static const surfaceContainerLow = Color(0xFFF3F3FB);
   static const surfaceVariant = Color(0xFFE2E2E9);
   static const surfaceGray = Color(0xFFF5F7F9);
   static const joinBackground = Color(0xFFEEF5FC);

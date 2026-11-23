@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
 
 import 'package:satur_app/core/theme/satur_colors.dart';
 import 'package:satur_app/features/catalog/presentation/product_list/product_list_cubit.dart';
 import 'package:satur_app/features/catalog/presentation/product_list/product_list_state.dart';
 import 'package:satur_app/features/catalog/presentation/shared/catalog_bottom_nav.dart';
+import 'package:satur_app/features/catalog/presentation/shared/catalog_nav.dart';
 import 'package:satur_app/features/catalog/presentation/product_list/widgets/catalog_top_bar.dart';
 import 'package:satur_app/features/catalog/presentation/product_list/widgets/product_list_body.dart';
 
@@ -67,11 +67,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
           ),
           CatalogBottomNav(
             active: CatalogTab.oferta,
-            onTap: (tab) {
-              if (tab == CatalogTab.start) {
-                context.go('/welcome');
-              }
-            },
+            onTap: (tab) => handleCatalogTabNavigation(context, tab),
           ),
         ],
       ),

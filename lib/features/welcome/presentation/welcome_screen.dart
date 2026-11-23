@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:satur_app/core/widgets/satur_button.dart';
 import 'package:satur_app/core/widgets/satur_logo.dart';
 
-/// Entry screen — Zaloguj (no-op) / Dołącz → join program.
+/// Entry screen — Zaloguj → login / Dołącz → join program.
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
@@ -42,19 +42,13 @@ class WelcomeScreen extends StatelessWidget {
               ),
               SaturButton(
                 label: 'Zaloguj się',
-                // Intentionally empty — login screen not in this slice.
-                onPressed: () {},
+                onPressed: () => context.go('/login'),
               ),
               const SizedBox(height: 16),
               SaturButton(
                 label: 'Dołącz do programu',
                 variant: SaturButtonVariant.outline,
                 onPressed: () => context.go('/join-program'),
-              ),
-              const SizedBox(height: 16),
-              TextButton(
-                onPressed: () => context.go('/products'),
-                child: const Text('Przeglądaj ofertę'),
               ),
               const SizedBox(height: 32),
             ],

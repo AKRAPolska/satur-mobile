@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:satur_app/core/theme/satur_colors.dart';
 
-enum CatalogTab { start, oferta, ulubione, koszyk }
+enum CatalogTab { start, oferta, ulubione, koszyk, konto }
 
-/// 4-tab bottom nav per v1 wycena. Non-oferta tabs are no-op for now.
+/// 5-tab bottom nav per Stitch (incl. Konto). Unwired tabs are no-op.
 class CatalogBottomNav extends StatelessWidget {
   const CatalogBottomNav({
     super.key,
@@ -33,6 +33,7 @@ class CatalogBottomNav extends StatelessWidget {
               _item(CatalogTab.oferta, Icons.storefront_outlined, 'Oferta'),
               _item(CatalogTab.ulubione, Icons.favorite_border, 'Ulubione'),
               _item(CatalogTab.koszyk, Icons.shopping_bag_outlined, 'Koszyk'),
+              _item(CatalogTab.konto, Icons.person_outline, 'Konto'),
             ],
           ),
         ),
@@ -46,7 +47,7 @@ class CatalogBottomNav extends StatelessWidget {
     return InkWell(
       onTap: () => onTap?.call(tab),
       child: SizedBox(
-        width: 72,
+        width: 64,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
