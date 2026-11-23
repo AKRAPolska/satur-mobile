@@ -86,9 +86,13 @@ clean:
 	flutter clean
 
 satur-api-check:
-	@echo "Checking http://localhost:5051 ..."
-	@curl -sS -o /dev/null -w "HTTP %{http_code}\n" --connect-timeout 3 http://localhost:5051/ \
+	@echo "Checking $(API_BASE_URL)/api/v2/shop/channels ..."
+	@curl -sS -o /tmp/satur-channels.json -w "HTTP %{http_code}\n" --connect-timeout 3 \
+		"$(API_BASE_URL)/api/v2/shop/channels" \
 		|| (echo "API niedostępne. W ../satur: make up  (web na :5051)"; exit 1)
+	@grep -q 'SATUR' /tmp/satur-channels.json \
+		|| (echo "Oczekiwano kanału SATUR w odpowiedzi channels"; exit 1)
+	@echo "OK — Shop API channels zawiera SATUR"
 
 env:
 	@echo "FLUTTER_ROOT=$(FLUTTER_ROOT)"

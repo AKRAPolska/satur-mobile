@@ -42,6 +42,7 @@ make run-android     # API → http://10.0.2.2:5051
 - Brak MySQL/Postgres w `docker-compose.yml`.
 - Domyślnie `API_BASE_URL=http://localhost:5051` (web Satur).
 - Przekazywane przez `--dart-define=API_BASE_URL=...`.
+- Smoke: `make satur-api-check` → `GET /api/v2/shop/channels` (oczekuje kanału `SATUR`).
 
 ## Docker
 
