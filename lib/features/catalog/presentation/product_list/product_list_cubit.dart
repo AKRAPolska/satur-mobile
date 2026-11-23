@@ -1,7 +1,7 @@
-import 'package:satur_app/features/catalog/presentation/package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:satur_app/features/catalog/presentation/package:satur_app/features/catalog/domain/catalog_repository.dart';
-import 'package:satur_app/features/catalog/presentation/product_list_state.dart';
+import 'package:satur_app/features/catalog/domain/catalog_repository.dart';
+import 'package:satur_app/features/catalog/presentation/product_list/product_list_state.dart';
 
 final class ProductListCubit extends Cubit<ProductListState> {
   ProductListCubit(this._repository) : super(const ProductListInitial());

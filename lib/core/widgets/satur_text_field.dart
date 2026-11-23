@@ -1,4 +1,4 @@
-import 'package:satur_app/core/widgets/package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class SaturTextField extends StatelessWidget {
   const SaturTextField({

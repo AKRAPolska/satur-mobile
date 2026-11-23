@@ -1,5 +1,5 @@
-import 'package:satur_app/core/theme/package:flutter/material.dart';
-import 'package:satur_app/core/theme/package:google_fonts/google_fonts.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'package:satur_app/core/theme/satur_colors.dart';
 

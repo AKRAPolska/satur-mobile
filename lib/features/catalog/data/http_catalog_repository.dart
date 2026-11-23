@@ -1,11 +1,11 @@
-import 'package:satur_app/features/catalog/data/package:satur_app/core/network/api_client.dart';
-import 'package:satur_app/features/catalog/data/package:satur_app/core/network/api_failure.dart';
-import 'package:satur_app/features/catalog/data/package:satur_app/core/result/result.dart';
-import 'package:satur_app/features/catalog/data/package:satur_app/features/catalog/domain/catalog_failure.dart';
-import 'package:satur_app/features/catalog/data/package:satur_app/features/catalog/domain/catalog_repository.dart';
-import 'package:satur_app/features/catalog/data/package:satur_app/features/catalog/domain/product_detail.dart';
-import 'package:satur_app/features/catalog/data/package:satur_app/features/catalog/domain/product_list_page.dart';
-import 'package:satur_app/features/catalog/data/package:satur_app/features/catalog/domain/product_summary.dart';
+import 'package:satur_app/core/network/api_client.dart';
+import 'package:satur_app/core/network/api_failure.dart';
+import 'package:satur_app/core/result/result.dart';
+import 'package:satur_app/features/catalog/domain/catalog_failure.dart';
+import 'package:satur_app/features/catalog/domain/catalog_repository.dart';
+import 'package:satur_app/features/catalog/domain/product_detail.dart';
+import 'package:satur_app/features/catalog/domain/product_list_page.dart';
+import 'package:satur_app/features/catalog/domain/product_summary.dart';
 
 final class HttpCatalogRepository implements CatalogRepository {
   HttpCatalogRepository(this._api);

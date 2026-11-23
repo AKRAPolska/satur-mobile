@@ -1,6 +1,6 @@
-import 'package:satur_app/core/widgets/package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-import 'package:satur_app/core/widgets/package:satur_app/core/theme/satur_colors.dart';
+import 'package:satur_app/core/theme/satur_colors.dart';
 
 enum SaturButtonVariant { primary, outline }
 

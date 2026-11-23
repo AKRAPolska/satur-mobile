@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:satur_app/features/catalog/domain/product_summary.dart';
-import 'package:satur_app/features/catalog/presentation/widgets/product_card.dart';
+import 'package:satur_app/features/catalog/presentation/product_list/widgets/product_card.dart';
 
 void main() {
   testWidgets('ProductCard shows name and price', (tester) async {

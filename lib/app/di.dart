@@ -1,12 +1,12 @@
 import 'package:http/http.dart' as http;
 
-import 'package:satur_app/app/package:satur_app/core/config.dart';
-import 'package:satur_app/app/package:satur_app/core/network/api_client.dart';
-import 'package:satur_app/app/package:satur_app/features/catalog/data/http_catalog_repository.dart';
-import 'package:satur_app/app/package:satur_app/features/catalog/domain/catalog_repository.dart';
-import 'package:satur_app/app/package:satur_app/features/join_program/data/stub_join_program_repository.dart';
-import 'package:satur_app/app/package:satur_app/features/join_program/domain/join_program.dart';
-import 'package:satur_app/app/package:satur_app/features/join_program/domain/join_program_repository.dart';
+import 'package:satur_app/core/config.dart';
+import 'package:satur_app/core/network/api_client.dart';
+import 'package:satur_app/features/catalog/data/http_catalog_repository.dart';
+import 'package:satur_app/features/catalog/domain/catalog_repository.dart';
+import 'package:satur_app/features/join_program/data/stub_join_program_repository.dart';
+import 'package:satur_app/features/join_program/domain/join_program.dart';
+import 'package:satur_app/features/join_program/domain/join_program_repository.dart';
 
 /// Manual composition root. Swap [JoinProgramRepository] when HTTP is ready.
 final class AppDependencies {

@@ -1,4 +1,4 @@
-import 'package:satur_app/core/widgets/package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class SaturLogo extends StatelessWidget {
   const SaturLogo({super.key, this.width = 220});

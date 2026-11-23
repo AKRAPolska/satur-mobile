@@ -1,7 +1,7 @@
-import 'package:satur_app/features/catalog/presentation/package:equatable/equatable.dart';
+import 'package:equatable/equatable.dart';
 
-import 'package:satur_app/features/catalog/presentation/package:satur_app/features/catalog/domain/catalog_failure.dart';
-import 'package:satur_app/features/catalog/presentation/package:satur_app/features/catalog/domain/product_summary.dart';
+import 'package:satur_app/features/catalog/domain/catalog_failure.dart';
+import 'package:satur_app/features/catalog/domain/product_summary.dart';
 
 sealed class ProductListState extends Equatable {
   const ProductListState();

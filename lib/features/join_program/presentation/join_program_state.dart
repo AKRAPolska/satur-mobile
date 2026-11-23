@@ -1,6 +1,6 @@
-import 'package:satur_app/features/join_program/presentation/package:equatable/equatable.dart';
+import 'package:equatable/equatable.dart';
 
-import 'package:satur_app/features/join_program/presentation/package:satur_app/features/join_program/domain/join_program_failure.dart';
+import 'package:satur_app/features/join_program/domain/join_program_failure.dart';
 
 sealed class JoinProgramState extends Equatable {
   const JoinProgramState();

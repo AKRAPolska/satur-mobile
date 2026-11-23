@@ -1,7 +1,7 @@
-import 'package:satur_app/features/join_program/presentation/package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:satur_app/features/join_program/presentation/package:satur_app/features/join_program/domain/join_program.dart';
-import 'package:satur_app/features/join_program/presentation/package:satur_app/features/join_program/domain/join_program_failure.dart';
+import 'package:satur_app/features/join_program/domain/join_program.dart';
+import 'package:satur_app/features/join_program/domain/join_program_failure.dart';
 import 'package:satur_app/features/join_program/presentation/join_program_state.dart';
 
 final class JoinProgramCubit extends Cubit<JoinProgramState> {

@@ -1,8 +1,8 @@
-import 'package:satur_app/features/welcome/presentation/package:flutter/material.dart';
-import 'package:satur_app/features/welcome/presentation/package:go_router/go_router.dart';
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-import 'package:satur_app/features/welcome/presentation/package:satur_app/core/widgets/satur_button.dart';
-import 'package:satur_app/features/welcome/presentation/package:satur_app/core/widgets/satur_logo.dart';
+import 'package:satur_app/core/widgets/satur_button.dart';
+import 'package:satur_app/core/widgets/satur_logo.dart';
 
 /// Entry screen — Zaloguj (no-op) / Dołącz → join program.
 class WelcomeScreen extends StatelessWidget {

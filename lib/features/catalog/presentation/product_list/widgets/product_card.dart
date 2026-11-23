@@ -1,8 +1,8 @@
-import 'package:satur_app/features/catalog/presentation/widgets/package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-import 'package:satur_app/features/catalog/presentation/widgets/package:satur_app/core/theme/satur_colors.dart';
-import 'package:satur_app/features/catalog/presentation/widgets/package:satur_app/features/catalog/domain/money.dart';
-import 'package:satur_app/features/catalog/presentation/widgets/package:satur_app/features/catalog/domain/product_summary.dart';
+import 'package:satur_app/core/theme/satur_colors.dart';
+import 'package:satur_app/features/catalog/domain/money.dart';
+import 'package:satur_app/features/catalog/domain/product_summary.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({

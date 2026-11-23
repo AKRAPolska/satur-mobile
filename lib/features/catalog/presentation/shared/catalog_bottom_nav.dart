@@ -1,6 +1,6 @@
-import 'package:satur_app/features/catalog/presentation/widgets/package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-import 'package:satur_app/features/catalog/presentation/widgets/package:satur_app/core/theme/satur_colors.dart';
+import 'package:satur_app/core/theme/satur_colors.dart';
 
 enum CatalogTab { start, oferta, ulubione, koszyk }
 

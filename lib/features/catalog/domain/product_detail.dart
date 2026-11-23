@@ -1,4 +1,4 @@
-import 'package:satur_app/features/catalog/domain/package:equatable/equatable.dart';
+import 'package:equatable/equatable.dart';
 
 final class ProductDetail extends Equatable {
   const ProductDetail({

@@ -1,7 +1,7 @@
-import 'package:satur_app/features/join_program/data/package:satur_app/core/result/result.dart';
-import 'package:satur_app/features/join_program/data/package:satur_app/features/join_program/domain/email_address.dart';
-import 'package:satur_app/features/join_program/data/package:satur_app/features/join_program/domain/join_program_failure.dart';
-import 'package:satur_app/features/join_program/data/package:satur_app/features/join_program/domain/join_program_repository.dart';
+import 'package:satur_app/core/result/result.dart';
+import 'package:satur_app/features/join_program/domain/email_address.dart';
+import 'package:satur_app/features/join_program/domain/join_program_failure.dart';
+import 'package:satur_app/features/join_program/domain/join_program_repository.dart';
 
 /// No-network stub. Simulates latency; does not send email or hit Satur API.
 ///

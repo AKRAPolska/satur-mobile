@@ -6,8 +6,8 @@ import 'package:satur_app/features/catalog/domain/catalog_failure.dart';
 import 'package:satur_app/features/catalog/domain/catalog_repository.dart';
 import 'package:satur_app/features/catalog/domain/product_list_page.dart';
 import 'package:satur_app/features/catalog/domain/product_summary.dart';
-import 'package:satur_app/features/catalog/presentation/product_list_cubit.dart';
-import 'package:satur_app/features/catalog/presentation/product_list_state.dart';
+import 'package:satur_app/features/catalog/presentation/product_list/product_list_cubit.dart';
+import 'package:satur_app/features/catalog/presentation/product_list/product_list_state.dart';
 
 class _MockRepo extends Mock implements CatalogRepository {}
 
