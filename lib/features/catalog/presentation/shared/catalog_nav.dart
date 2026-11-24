@@ -15,7 +15,8 @@ void handleCatalogTabNavigation(BuildContext context, CatalogTab tab) {
       final loggedIn = context.read<SessionCubit>().isAuthenticated;
       context.go(loggedIn ? '/account' : '/login');
     case CatalogTab.ulubione:
+      break; // wishlist: no-op for now
     case CatalogTab.koszyk:
-      break;
+      context.go('/cart');
   }
 }

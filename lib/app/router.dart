@@ -8,6 +8,7 @@ import 'package:satur_app/app/di.dart';
 import 'package:satur_app/features/auth/presentation/account/account_screen.dart';
 import 'package:satur_app/features/auth/presentation/login/login_cubit.dart';
 import 'package:satur_app/features/auth/presentation/login/login_screen.dart';
+import 'package:satur_app/features/cart/presentation/cart_screen.dart';
 import 'package:satur_app/features/catalog/presentation/product_detail/product_detail_cubit.dart';
 import 'package:satur_app/features/catalog/presentation/product_detail/product_detail_screen.dart';
 import 'package:satur_app/features/catalog/presentation/product_list/product_list_cubit.dart';
@@ -44,6 +45,11 @@ GoRouter createRouter(AppDependencies deps) {
         path: '/account',
         name: 'account',
         builder: (context, state) => const AccountScreen(),
+      ),
+      GoRoute(
+        path: '/cart',
+        name: 'cart',
+        builder: (context, state) => const CartScreen(),
       ),
       GoRoute(
         path: '/join-program',
