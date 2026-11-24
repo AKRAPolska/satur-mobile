@@ -77,6 +77,7 @@ final class HttpCatalogRepository implements CatalogRepository {
             priceGross: prices.$1,
             originalPriceGross: prices.$2,
             specs: _specsFromJson(map['attributes']),
+            defaultVariantCode: _variantCodeFromIri(map['defaultVariant']),
           ),
         );
       },
@@ -102,10 +103,15 @@ final class HttpCatalogRepository implements CatalogRepository {
     );
   }
 
-  Future<(int?, int?)> _pricesFromDefaultVariant(Object? defaultVariant) async {
-    final iri = defaultVariant as String?;
-    if (iri == null || iri.isEmpty) return (null, null);
+  static String? _variantCodeFromIri(Object? iri) {
+    if (iri is! String || iri.isEmpty) return null;
     final code = iri.split('/').last;
+    return code.isEmpty ? null : code;
+  }
+
+  Future<(int?, int?)> _pricesFromDefaultVariant(Object? defaultVariant) async {
+    final code = _variantCodeFromIri(defaultVariant);
+    if (code == null) return (null, null);
     final result = await _api.get<Map<String, dynamic>>(
       '/api/v2/shop/product-variants/$code',
       decode: (json) => Map<String, dynamic>.from(json as Map),

@@ -10,6 +10,7 @@ final class ProductDetail extends Equatable {
     this.priceGross,
     this.originalPriceGross,
     this.specs = const {},
+    this.defaultVariantCode,
   });
 
   final String code;
@@ -20,6 +21,7 @@ final class ProductDetail extends Equatable {
   final int? priceGross;
   final int? originalPriceGross;
   final Map<String, String> specs;
+  final String? defaultVariantCode;
 
   bool get hasDiscount =>
       priceGross != null &&
@@ -43,5 +45,6 @@ final class ProductDetail extends Equatable {
         priceGross,
         originalPriceGross,
         specs,
+        defaultVariantCode,
       ];
 }
