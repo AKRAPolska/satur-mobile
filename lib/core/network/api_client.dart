@@ -32,13 +32,16 @@ final class ApiClient {
     return Uri.parse('$_baseUrl$normalized');
   }
 
-  Future<Map<String, String>> _headers({bool jsonBody = false}) async {
+  static const _jsonContentType = 'application/json';
+  static const _mergePatchContentType = 'application/merge-patch+json';
+
+  Future<Map<String, String>> _headers({String? contentType}) async {
     final headers = <String, String>{
       // Sylius collections need Hydra (`hydra:member`); application/json returns a bare array.
       'Accept': 'application/ld+json',
     };
-    if (jsonBody) {
-      headers['Content-Type'] = 'application/json';
+    if (contentType != null) {
+      headers['Content-Type'] = contentType;
     }
     final provider = tokenProvider;
     if (provider != null) {
@@ -71,9 +74,39 @@ final class ApiClient {
       () async => _http
           .post(
             _uri(path),
-            headers: await _headers(jsonBody: true),
+            headers: await _headers(contentType: _jsonContentType),
             body: body == null ? null : jsonEncode(body),
           )
+          .timeout(timeout),
+      decode: decode,
+    );
+  }
+
+  /// Sylius/API Platform item updates require `application/merge-patch+json`.
+  Future<Result<T, ApiFailure>> patch<T>(
+    String path, {
+    Object? body,
+    required T Function(Object? json) decode,
+  }) {
+    return _send<T>(
+      () async => _http
+          .patch(
+            _uri(path),
+            headers: await _headers(contentType: _mergePatchContentType),
+            body: body == null ? null : jsonEncode(body),
+          )
+          .timeout(timeout),
+      decode: decode,
+    );
+  }
+
+  Future<Result<T, ApiFailure>> delete<T>(
+    String path, {
+    required T Function(Object? json) decode,
+  }) {
+    return _send<T>(
+      () async => _http
+          .delete(_uri(path), headers: await _headers())
           .timeout(timeout),
       decode: decode,
     );

@@ -149,4 +149,77 @@ void main() {
     final result = await client.get('/x', decode: (_) => null);
     expect(result, isA<Success<void, ApiFailure>>());
   });
+
+  test('patch sends merge-patch+json body, Accept and Bearer token', () async {
+    final client = buildClient(
+      (request) async {
+        expect(request.method, 'PATCH');
+        expect(request.url.path, '/api/v2/shop/orders/t/items');
+        expect(
+          request.headers['Content-Type'],
+          startsWith('application/merge-patch+json'),
+        );
+        expect(request.headers['Accept'], 'application/ld+json');
+        expect(request.headers['Authorization'], 'Bearer tok-1');
+        expect(jsonDecode(request.body), {'quantity': 2});
+        return http.Response(jsonEncode({'ok': true}), 200);
+      },
+      tokenProvider: () async => 'tok-1',
+    );
+
+    final result = await client.patch(
+      '/api/v2/shop/orders/t/items',
+      body: {'quantity': 2},
+      decode: (json) => (json as Map)['ok'] as bool,
+    );
+
+    expect((result as Success).value, isTrue);
+  });
+
+  test('post keeps application/json Content-Type', () async {
+    final client = buildClient((request) async {
+      expect(request.headers['Content-Type'], startsWith('application/json'));
+      return http.Response('{}', 200);
+    });
+
+    final result = await client.post('/x', body: {}, decode: (_) => null);
+    expect(result, isA<Success<void, ApiFailure>>());
+  });
+
+  test('patch maps non-2xx to ApiHttpFailure', () async {
+    final client = buildClient((_) async => http.Response('bad', 422));
+
+    final result = await client.patch('/x', body: {}, decode: (_) => null);
+
+    final err = (result as Failure).error as ApiHttpFailure;
+    expect(err.statusCode, 422);
+    expect(err.body, 'bad');
+  });
+
+  test('delete sends no body or Content-Type and decodes empty 204 as null',
+      () async {
+    final client = buildClient(
+      (request) async {
+        expect(request.method, 'DELETE');
+        expect(request.headers.containsKey('Content-Type'), isFalse);
+        expect(request.headers['Authorization'], 'Bearer tok-1');
+        expect(request.body, isEmpty);
+        return http.Response('', 204);
+      },
+      tokenProvider: () async => 'tok-1',
+    );
+
+    final result = await client.delete<Object?>('/x', decode: (json) => json);
+
+    expect(result, isA<Success<Object?, ApiFailure>>());
+    expect((result as Success).value, isNull);
+  });
+
+  test('delete maps 404 to ApiHttpFailure', () async {
+    final client = buildClient((_) async => http.Response('gone', 404));
+
+    final result = await client.delete('/x', decode: (_) => null);
+
+    expect(((result as Failure).error as ApiHttpFailure).statusCode, 404);
+  });
 }
