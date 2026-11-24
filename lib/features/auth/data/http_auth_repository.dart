@@ -18,7 +18,7 @@ final class HttpAuthRepository implements AuthRepository {
     required String password,
   }) async {
     final result = await _api.post<Map<String, dynamic>>(
-      '/api/v2/shop/authentication-token',
+      '/api/v2/shop/customers/token',
       body: {'email': email, 'password': password},
       decode: (json) => Map<String, dynamic>.from(json as Map),
     );

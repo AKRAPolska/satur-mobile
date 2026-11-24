@@ -24,7 +24,7 @@ void main() {
     final client = buildClient((request) async {
       expect(request.method, 'GET');
       expect(request.url.toString(), 'http://example.test/api/v2/shop/channels');
-      expect(request.headers['Accept'], 'application/json');
+      expect(request.headers['Accept'], 'application/ld+json');
       return http.Response(jsonEncode({'ok': true}), 200);
     });
 

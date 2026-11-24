@@ -34,7 +34,8 @@ final class ApiClient {
 
   Future<Map<String, String>> _headers({bool jsonBody = false}) async {
     final headers = <String, String>{
-      'Accept': 'application/json',
+      // Sylius collections need Hydra (`hydra:member`); application/json returns a bare array.
+      'Accept': 'application/ld+json',
     };
     if (jsonBody) {
       headers['Content-Type'] = 'application/json';

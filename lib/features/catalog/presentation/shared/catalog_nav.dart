@@ -8,7 +8,7 @@ import 'package:satur_app/features/catalog/presentation/shared/catalog_bottom_na
 void handleCatalogTabNavigation(BuildContext context, CatalogTab tab) {
   switch (tab) {
     case CatalogTab.start:
-      context.go('/welcome');
+      break; // hidden in nav for now
     case CatalogTab.oferta:
       context.go('/products');
     case CatalogTab.konto:

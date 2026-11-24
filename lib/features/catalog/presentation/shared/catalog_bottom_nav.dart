@@ -29,7 +29,7 @@ class CatalogBottomNav extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _item(CatalogTab.start, Icons.home_outlined, 'Start'),
+              // Start hidden for now — wired to /welcome and felt like logout.
               _item(CatalogTab.oferta, Icons.storefront_outlined, 'Oferta'),
               _item(CatalogTab.ulubione, Icons.favorite_border, 'Ulubione'),
               _item(CatalogTab.koszyk, Icons.shopping_bag_outlined, 'Koszyk'),

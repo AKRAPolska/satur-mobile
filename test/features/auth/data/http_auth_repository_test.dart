@@ -15,7 +15,7 @@ void main() {
     final client = ApiClient(
       httpClient: MockClient((request) async {
         expect(request.method, 'POST');
-        expect(request.url.path, '/api/v2/shop/authentication-token');
+        expect(request.url.path, '/api/v2/shop/customers/token');
         final body = jsonDecode(request.body) as Map<String, dynamic>;
         expect(body['email'], 'user@satur.pl');
         expect(body['password'], 'secret');

@@ -18,7 +18,7 @@ Email + password login against Satur Shop API, durable JWT session, Stitch-align
 ## References
 
 - Stitch: `logowanie_mobile_form`, `moje_konto_dashboard`
-- API: `POST /api/v2/shop/authentication-token` `{ email, password }` → `{ token, customer }`
+- API: `POST /api/v2/shop/customers/token` `{ email, password }` → `{ token, customer }`
 - Existing: `ApiClient.tokenProvider`, feature layout like `catalog`
 
 ## Architecture
