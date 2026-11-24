@@ -143,6 +143,17 @@ void main() {
     expect(cubit.state, CartLoaded(testCart()));
   });
 
+  test('updateQuantity 404 clears stale cart to empty', () async {
+    repo.fetchResult = Success(testCart());
+    await cubit.refresh();
+    repo.updateResult = const Failure(CartHttpFailure(statusCode: 404));
+
+    final ok = await cubit.updateQuantity('101', 2);
+
+    expect(ok, isFalse);
+    expect(cubit.state, const CartLoaded(null));
+  });
+
   test('updateQuantity before the cart is loaded returns false', () async {
     expect(await cubit.updateQuantity('101', 2), isFalse);
     expect(repo.updateCalls, isEmpty);

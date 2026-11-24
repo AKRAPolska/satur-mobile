@@ -90,8 +90,13 @@ final class CartCubit extends Cubit<CartState> {
       case Success(:final value):
         emit(CartLoaded(value, busyItemIds: busy, adding: latest.adding));
         return true;
-      case Failure():
-        emit(latest.copyWith(busyItemIds: busy));
+      case Failure(:final error):
+        // Repo clears the token on 404; drop stale lines so the UI matches.
+        if (error is CartHttpFailure && error.statusCode == 404) {
+          emit(CartLoaded(null, busyItemIds: busy, adding: latest.adding));
+        } else {
+          emit(latest.copyWith(busyItemIds: busy));
+        }
         return false;
     }
   }
