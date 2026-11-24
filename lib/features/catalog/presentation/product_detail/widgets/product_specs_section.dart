@@ -28,26 +28,59 @@ class ProductSpecsSection extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          ...specs.entries.map(
-            (e) => Padding(
-              padding: const EdgeInsets.only(bottom: 12),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    e.key,
-                    style: const TextStyle(
-                      fontSize: 12,
-                      color: SaturColors.onSurfaceVariant,
-                    ),
-                  ),
-                  Text(e.value),
-                ],
-              ),
-            ),
-          ),
+          ..._rows(),
         ],
       ),
+    );
+  }
+
+  List<Widget> _rows() {
+    final entries = specs.entries.toList();
+    final rows = <Widget>[];
+    for (var i = 0; i < entries.length; i += 2) {
+      final left = entries[i];
+      final right = i + 1 < entries.length ? entries[i + 1] : null;
+      rows.add(
+        Padding(
+          padding: const EdgeInsets.only(bottom: 12),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(child: _SpecCell(entry: left)),
+              const SizedBox(width: 16),
+              Expanded(
+                child: right == null
+                    ? const SizedBox.shrink()
+                    : _SpecCell(entry: right),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+    return rows;
+  }
+}
+
+class _SpecCell extends StatelessWidget {
+  const _SpecCell({required this.entry});
+
+  final MapEntry<String, String> entry;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          entry.key,
+          style: const TextStyle(
+            fontSize: 12,
+            color: SaturColors.onSurfaceVariant,
+          ),
+        ),
+        Text(entry.value),
+      ],
     );
   }
 }

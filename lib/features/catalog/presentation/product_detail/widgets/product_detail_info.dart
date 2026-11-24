@@ -38,16 +38,58 @@ class ProductDetailInfo extends StatelessWidget {
         ],
         if (product.priceGross != null) ...[
           const SizedBox(height: 8),
-          Text(
-            formatPln(product.priceGross!),
-            style: const TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.w700,
-              color: SaturColors.primary,
-            ),
+          Wrap(
+            crossAxisAlignment: WrapCrossAlignment.center,
+            spacing: 8,
+            children: [
+              Text(
+                formatPln(product.priceGross!),
+                style: const TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.w700,
+                  color: SaturColors.primary,
+                ),
+              ),
+              if (product.hasDiscount) ...[
+                Text(
+                  formatPln(product.originalPriceGross!),
+                  style: const TextStyle(
+                    fontSize: 14,
+                    color: SaturColors.outline,
+                    decoration: TextDecoration.lineThrough,
+                  ),
+                ),
+                _DiscountPill(percent: product.discountPercent!),
+              ],
+            ],
           ),
         ],
       ],
+    );
+  }
+}
+
+class _DiscountPill extends StatelessWidget {
+  const _DiscountPill({required this.percent});
+
+  final int percent;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: SaturColors.error,
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        '-$percent%',
+        style: const TextStyle(
+          color: Colors.white,
+          fontSize: 12,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
     );
   }
 }

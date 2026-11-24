@@ -26,6 +26,13 @@ final class ProductDetail extends Equatable {
       originalPriceGross != null &&
       originalPriceGross! > priceGross!;
 
+  int? get discountPercent {
+    if (!hasDiscount) return null;
+    final original = originalPriceGross!;
+    final price = priceGross!;
+    return (((original - price) / original) * 100).round();
+  }
+
   @override
   List<Object?> get props => [
         code,
