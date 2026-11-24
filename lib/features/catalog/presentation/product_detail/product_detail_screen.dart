@@ -105,7 +105,7 @@ class _ProductDetailLoaded extends StatelessWidget {
             ],
           ),
         ),
-        const ProductDetailFooter(),
+        ProductDetailFooter(variantCode: product.defaultVariantCode),
       ],
     );
   }
